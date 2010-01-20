@@ -1,0 +1,22 @@
+<h1>Listing kebabs</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Comment</th>
+  </tr>
+
+<% @kebabs.each do |kebab| %>
+  <tr>
+    <td><%=h kebab.date %></td>
+    <td><%=h kebab.comment %></td>
+    <td><%= link_to 'Show', kebab %></td>
+    <td><%= link_to 'Edit', edit_kebab_path(kebab) %></td>
+    <td><%= link_to 'Destroy', kebab, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New kebab', new_kebab_path %>

@@ -1,0 +1,2447 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "kebabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100120171450')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("kebabs")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-20 18:16:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 18:16:29) [GET]
+  [4;36;1mKebab Load (0.5ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 71ms (View: 66, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:16:47) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Completed in 149ms (View: 143, DB: 0) | 200 OK [http://localhost/kebabs/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "kebabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100120171450')[0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:18:00) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:18:02) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:18:05) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:18:24) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `textarea' for #<ActionView::Helpers::FormBuilder:0x104243ec0>) on line #12 of app/views/kebabs/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :comment %><br />
+12:     <%= f.textarea :comment %>
+13:   </p>
+14:   <p>
+15:     <%= f.submit 'Create' %>
+
+    app/views/kebabs/new.html.erb:12
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (128.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:18:28) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/kebabs/new]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+Migrating to CreatePeople (20100120171940)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100120171940')[0m
+Migrating to AddPersonIdToKebabs (20100120172152)
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "kebabs" ADD "person_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100120172152')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kebabs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+Migrating to CreatePeople (20100120171940)
+Migrating to AddPersonIdToKebabs (20100120172152)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kebabs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "kebabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "comment" varchar(255), "created_at" datetime, "updated_at" datetime, "person_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100120172152')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100120171450')[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100120171940')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mCREATE TABLE "kebabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "comment" varchar(255), "created_at" datetime, "updated_at" datetime, "person_id" integer) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100120172152')[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100120171450')[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100120171940')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "kebabs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "comment" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100120171450')[0m
+Migrating to CreatePeople (20100120171940)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100120171940')[0m
+Migrating to AddPromoterIdToKebabs (20100120172152)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+Migrating to CreatePeople (20100120171940)
+Migrating to AddPromoterIdToKebabs (20100120172152)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "kebabs" ADD "promoter_id" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100120172152')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("kebabs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:34:58) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x10444bd58>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (137.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:35:30) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104408120>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:35:32) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1044ec640>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (61.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:35:42) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104178248>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:35:43) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1042300f0>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (139.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:35:56) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104335e28>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (139.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:36:40) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x10441aa28>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (62.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:36:42) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1044f96d8>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (61.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:36:53) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104183d00>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (62.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:36:54) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104236bd0>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (139.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:37:01) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104341700>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (138.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:37:08) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104426a80>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (61.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:38:58) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x10444bd58>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (136.3ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:38:59) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1044074c8>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (64.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:39:52) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x1040c7d58>) on line #2 of app/views/kebabs/_form.erb:
+1: <p>
+2:   <%= f.label :date %><br />
+3:   <%= f.date_select :date %>
+4: </p>
+5: <p>
+
+    app/views/kebabs/_form.erb:2
+    app/views/kebabs/new.html.erb:5
+    app/views/kebabs/new.html.erb:3
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (62.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:41:10) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x104194ab0>) on line #4 of app/views/kebabs/new.html.erb:
+1: <h1>New kebab</h1>
+2: 
+3: 
+4:   <%= render 'form', :locals => {:f => f} %>
+5: 
+6: <%= link_to 'Back', kebabs_path %>
+
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (129.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:41:23) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Rendered kebabs/_form (52.7ms)
+Completed in 68ms (View: 62, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:41:36) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Rendered kebabs/_form (8.9ms)
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 18:41:39) [GET]
+  [4;36;1mKebab Load (0.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:41:41) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Rendered kebabs/_form (9.7ms)
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:44:53) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.new_record?) on line #7 of app/views/kebabs/_form.erb:
+4:     <%= f.label :date %><br />
+5:     <%= f.date_select :date %>
+6:   </p>
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter %>
+
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (137.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:45:59) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.build):
+  app/controllers/kebabs_controller.rb:28:in `new'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:46:20) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `person' for #<Class:0x1042094f0>):
+  app/controllers/kebabs_controller.rb:28:in `new'
+
+Rendered rescues/_trace (122.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:47:16) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10:in `select'
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (64.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:47:35) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `promoter' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:47:57) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `promoter' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (70.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:47:58) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `promoter' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (70.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:48:29) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `promoter' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (73.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:49:33) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+ERROR: compiling _run_erb_app47views47kebabs47_form46erb_locals_form_object RAISED compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/kebabs/_form.erb:10: syntax error, unexpected ')'
+...ect {|p| [ p.name, p.id ] }, ).to_s); @output_buffer.concat ...
+                              ^
+Function body:           def _run_erb_app47views47kebabs47_form46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  form_for(@kebab) do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :date ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.date_select :date ).to_s); @output_buffer.concat "\n  </p>\n  "
+
+;  f.fields_for :promoter do |builder| ; @output_buffer.concat "\n    <p>\n      "
+
+; @output_buffer.concat(( builder.label :promoter, "Organisateur" ).to_s); @output_buffer.concat "<br />\n      "
+; @output_buffer.concat(( builder.select :promoter, Person.all.collect {|p| [ p.name, p.id ] }, ).to_s); @output_buffer.concat "\n    </p>\n  "
+
+;  end ; @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :comment ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_area :comment ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.submit 'Create' ).to_s); @output_buffer.concat "\n  </p>\n"
+
+;  end ; @output_buffer.concat "\n\n"
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/denisjacquemin/Documents/Projects/kebab/app/views/kebabs/_form.erb:25:in `compile!'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:271:in `render'
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/kebabs/new.html.erb:4:in `_run_erb_app47views47kebabs47new46html46erb'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:343:in `_render_with_layout'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/denisjacquemin/Documents/Projects/kebab/app/controllers/kebabs_controller.rb:30:in `new'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/kebabs/_form.erb:10: syntax error, unexpected ')'
+...ect {|p| [ p.name, p.id ] }, ).to_s); @output_buffer.concat ...
+                              ^) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all.collect {|p| [ p.name, p.id ] }, %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:25:in `compile!'
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (140.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:49:39) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `promoter' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select :promoter, Person.all.collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (149.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:50:07) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'Person', :promoter, Person.all.collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (144.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:50:38) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `Person' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'Person', :promoter %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (146.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:50:53) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.9ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'Kebab', :promoter, Person.all.collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (66.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:51:08) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `Kebab' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'Kebab', :promoter %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (69.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:51:22) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `Kebabs' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'Kebabs', :promoter %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (70.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:51:30) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `inject' for :promoter:Symbol) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebabs', :promoter %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (66.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:51:35) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebabs', :promoter, Person.all.collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (68.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:52:39) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id', Person.all.collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (66.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:52:55) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id', Person.find(:all).collect {|p| [ p.name, p.id ] } %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (143.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:54:44) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `merge' for ["Denis", "1"]:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id', ['Denis', '1'] %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (145.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:54:58) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id', Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (143.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:55:08) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `kebab' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id' %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (148.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:55:25) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Rendered kebabs/_form (12.1ms)
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:55:37) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `merge' for []:Array) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebabs', 'promoter_id', Person.all %>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (141.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:55:47) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+Rendered kebabs/_form (11.9ms)
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:58:36) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `kebab' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id'%>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (145.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:58:48) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (undefined method `kebab' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :kebab, "Organisateur" %><br />
+10:       <%= builder.select 'kebab', 'promoter_id'%>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 18:59:45) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+
+ActionView::TemplateError (wrong number of arguments (2 for 3)) on line #10 of app/views/kebabs/_form.erb:
+7:   <% f.fields_for :promoter do |builder| %>
+8:     <p>
+9:       <%= builder.label :promoter, "Organisateur" %><br />
+10:       <%= select 'kebab', 'promoter_id'%>
+11:     </p>
+12:   <% end %>
+13:   <p>
+
+    app/views/kebabs/_form.erb:10:in `select'
+    app/views/kebabs/_form.erb:10
+    app/views/kebabs/_form.erb:7
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (141.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:00:16) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (11.8ms)
+Completed in 25ms (View: 16, DB: 0) | 200 OK [http://localhost/kebabs/new]
+  [4;35;1mPerson Create (0.5ms)[0m   [0mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES('Denis JAcquemin', '2010-01-20 18:00:42', '2010-01-20 18:00:42')[0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:00:45) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (11.8ms)
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:01:24) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (12.7ms)
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:01:58) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"test", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+  [4;35;1mKebab Create (0.7ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('test', '2010-01-20 18:01:58', '2010-01-20 18:01:58', '2010-01-20', 1)[0m
+Redirected to http://localhost:3000/kebabs/1
+Completed in 13ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-20 19:01:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 1) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/kebabs/1]
+  [4;36;1mKebab Load (0.4ms)[0m   [0;1mSELECT * FROM "kebabs" LIMIT 1[0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 19:02:22) [GET]
+  [4;35;1mKebab Load (0.6ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-20 19:02:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 1) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (17.4ms)
+Completed in 33ms (View: 27, DB: 1) | 200 OK [http://localhost/kebabs/1/edit]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 19:02:28) [GET]
+  [4;35;1mKebab Load (0.5ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/kebabs]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+Migrating to CreatePeople (20100120171940)
+Migrating to AddPromoterIdToKebabs (20100120172152)
+Migrating to CreateTransportations (20100120180338)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "transportations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "kebab_id" integer, "person_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100120180338')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kebabs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("people")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("transportations")[0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:06:46) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (70.8ms)
+Completed in 109ms (View: 88, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:07:28) [GET]
+
+NoMethodError (undefined method `build_transportation' for #<Kebab:0x104157fc0>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (42.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mKebab Load (0.5ms)[0m   [0;1mSELECT * FROM "kebabs" LIMIT 1[0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 1) [0m
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:09:13) [GET]
+
+NoMethodError (undefined method `transportation' for #<Kebab:0x1042a3668>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:10:02) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `build' for #<Class:0x1040a4498>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:10:13) [GET]
+  [4;36;1mTransportation Create (0.5ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-20 18:10:13', '2010-01-20 18:10:13', NULL, NULL)[0m
+
+NoMethodError (undefined method `each' for #<Transportation:0x1042a6250>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:10:24) [GET]
+
+NoMethodError (undefined method `each' for #<Transportation:0x1044ea728>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (42.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:10:25) [GET]
+
+NoMethodError (undefined method `each' for #<Transportation:0x104281888>):
+  app/controllers/kebabs_controller.rb:29:in `new'
+  app/controllers/kebabs_controller.rb:29:in `times'
+  app/controllers/kebabs_controller.rb:29:in `new'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:10:40) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.8ms)
+Completed in 111ms (View: 21, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:10:51) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"test 2\r\n", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>"1", "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2182813100) expected, got String(#2148246520)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (43.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:12:06) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations[]' for #<Kebab:0x10415b3a0>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Organisateur" %><br />
+16:       <%= select 'kebab', 'transportations[]', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (75.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:13:22) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.9ms)
+Completed in 115ms (View: 21, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:13:27) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"fdfd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>{"transportations"=>"1"}, "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2182946680) expected, got Array(#2148226700)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (44.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:13:51) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (88.7ms)
+Completed in 109ms (View: 94, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:13:55) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"dffdfd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>{"transportation"=>"1"}, "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2183270400) expected, got Array(#2148226700)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:16:40) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportation' for #<Kebab:0x1041f6a08>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportation', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (74.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:16:52) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (14.6ms)
+Completed in 36ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:17:08) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"dffd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>"1", "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2183576320) expected, got String(#2148246520)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (44.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:18:13) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations[]' for #<Kebab:0x10427a178>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportations[]', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (148.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:19:29) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.6ms)
+Completed in 36ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:19:33) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"fddf", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "promoter_id"=>"1"}, "kebab.transportations"=>{"person_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+  [4;36;1mKebab Create (0.4ms)[0m   [0;1mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('fddf', '2010-01-20 18:19:33', '2010-01-20 18:19:33', '2010-01-20', 1)[0m
+Redirected to http://localhost:3000/kebabs/2
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-20 19:19:33) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 2) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/kebabs/2]
+  [4;36;1mKebab Load (0.4ms)[0m   [0;1mSELECT * FROM "kebabs" ORDER BY kebabs.id DESC LIMIT 1[0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 2) [0m
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 19:20:38) [GET]
+  [4;36;1mKebab Load (0.6ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:20:39) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.3ms)
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:20:42) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"dffd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>{"person_id"=>"1"}, "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2181842280) expected, got Array(#2148226700)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:21:35) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (`@kebab.transportations' is not allowed as an instance variable name) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab.transportations[]', 'person_id', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (149.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:21:45) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.1ms)
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:23:06) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (14.5ms)
+Completed in 34ms (View: 19, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:23:10) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"fddfdf", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>"1", "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2183592220) expected, got String(#2148246520)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (45.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:23:20) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations.person_id' for #<Kebab:0x10427d8f0>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportations.person_id', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (146.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:23:45) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations[]' for #<Kebab:0x10420d370>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportations[]', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (75.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:23:49) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (14.6ms)
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:24:43) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportation.person_id' for #<Kebab:0x1040bc480>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportation.person_id', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:24:54) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (16.0ms)
+Completed in 114ms (View: 21, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 19:25:08) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"dffdfd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations"=>"1", "promoter_id"=>"1"}, "authenticity_token"=>"vYpvv6rhMdIMagmIXxrolbK0cqx8DFf7nBVwR2vDYu4="}
+
+ActiveRecord::AssociationTypeMismatch (Transportation(#2182791760) expected, got String(#2148246520)):
+  app/controllers/kebabs_controller.rb:45:in `new'
+  app/controllers/kebabs_controller.rb:45:in `create'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 19:25:27) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations[]' for #<Kebab:0x104154550>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= select 'kebab', 'transportations[]', Person.all.collect{|person| [person.name, person.id]}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (72.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:04:37) [GET]
+  [4;36;1mKebab Load (1.0ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 130ms (View: 85, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:04:39) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.7ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `map' for :name:Symbol) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:08:39) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `map' for :name:Symbol) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (73.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:20) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044f3670>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (73.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:22) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044d2f88>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (74.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:22) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044be808>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:22) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044b9448>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (76.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:23) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044a65c8>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (74.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:23) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x104492b18>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:23) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044812a0>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (74.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:23) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `people_ids' for #<Transportation:0x1044684d0>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :people_ids, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (76.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:44) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `transportations' for #<Transportation:0x10444a9d0>) on line #16 of app/views/kebabs/_form.erb:
+13:   <% f.fields_for :transportations do |builder| %>
+14:     <p>
+15:       <%= builder.label :person_id, "Voiture" %><br />
+16:       <%= builder.collection_select :transportations, Person.all, :name, :id, {:multiple => true}%>
+17:     </p>
+18:   <% end %>
+19:   <p>
+
+    app/views/kebabs/_form.erb:16
+    app/views/kebabs/_form.erb:13
+    app/views/kebabs/_form.erb:1
+    app/views/kebabs/new.html.erb:4
+    app/controllers/kebabs_controller.rb:31:in `new'
+
+Rendered rescues/_trace (147.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:09:56) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.1ms)
+Completed in 35ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:10:24) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (15.3ms)
+Completed in 36ms (View: 20, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 22:10:30) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"ddf", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations_attributes"=>{"0"=>{"person_id"=>"1"}, "1"=>{"person_id"=>"1"}}, "promoter_id"=>"1"}, "authenticity_token"=>"7w+U4YLKbz1Bwy1vWckRmxCEg0J6ovpYSfwmn8L1Juw="}
+  [4;35;1mKebab Create (0.5ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('ddf', '2010-01-20 21:10:30', '2010-01-20 21:10:30', '2010-01-20', 1)[0m
+  [4;36;1mTransportation Create (0.1ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-20 21:10:30', '2010-01-20 21:10:30', 1, 3)[0m
+  [4;35;1mTransportation Create (0.1ms)[0m   [0mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-20 21:10:30', '2010-01-20 21:10:30', 1, 3)[0m
+Redirected to http://localhost:3000/kebabs/3
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-20 22:10:30) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 3) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 27ms (View: 19, DB: 0) | 200 OK [http://localhost/kebabs/3]
+  [4;36;1mKebab Load (0.5ms)[0m   [0;1mSELECT * FROM "kebabs" ORDER BY kebabs.id DESC LIMIT 1[0m
+  [4;35;1mTransportation Load (0.4ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 3) [0m
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:13:31) [GET]
+  [4;36;1mKebab Load (0.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 57ms (View: 41, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:13:33) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (198.4ms)
+Completed in 226ms (View: 209, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:14:35) [GET]
+  [4;36;1mKebab Load (0.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-20 22:14:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 3) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (27.0ms)
+Completed in 57ms (View: 50, DB: 1) | 200 OK [http://localhost/kebabs/3/edit]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:14:43) [GET]
+  [4;35;1mKebab Load (0.7ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 22ms (View: 16, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:14:49) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (87.9ms)
+Completed in 106ms (View: 89, DB: 0) | 200 OK [http://localhost/kebabs/new]
+  [4;36;1mPerson Create (0.5ms)[0m   [0;1mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES('bens', '2010-01-20 21:15:18', '2010-01-20 21:15:18')[0m
+  [4;35;1mPerson Create (1.0ms)[0m   [0mINSERT INTO "people" ("name", "created_at", "updated_at") VALUES('Mathieu', '2010-01-20 21:15:23', '2010-01-20 21:15:23')[0m
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:15:31) [GET]
+  [4;36;1mKebab Load (0.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 56ms (View: 41, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-20 22:15:33) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (123.3ms)
+Completed in 150ms (View: 133, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-20 22:15:50) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"retest", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "transportations_attributes"=>{"0"=>{"person_id"=>"3"}, "1"=>{"person_id"=>"2"}}, "promoter_id"=>"1"}, "authenticity_token"=>"7w+U4YLKbz1Bwy1vWckRmxCEg0J6ovpYSfwmn8L1Juw="}
+  [4;36;1mKebab Create (0.5ms)[0m   [0;1mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('retest', '2010-01-20 21:15:50', '2010-01-20 21:15:50', '2010-01-20', 1)[0m
+  [4;35;1mTransportation Create (0.2ms)[0m   [0mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-20 21:15:50', '2010-01-20 21:15:50', 3, 4)[0m
+  [4;36;1mTransportation Create (0.1ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-20 21:15:50', '2010-01-20 21:15:50', 2, 4)[0m
+Redirected to http://localhost:3000/kebabs/4
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-20 22:15:50) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/kebabs/4]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:15:52) [GET]
+  [4;36;1mKebab Load (0.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-20 22:15:54) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (29.0ms)
+Completed in 42ms (View: 34, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-20 22:16:00) [PUT]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"retest", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "promoter_attributes"=>{"id"=>"1"}, "transportations_attributes"=>{"0"=>{"id"=>"4", "person_id"=>"3"}, "1"=>{"id"=>"5", "person_id"=>"2"}}, "promoter_id"=>"2"}, "authenticity_token"=>"7w+U4YLKbz1Bwy1vWckRmxCEg0J6ovpYSfwmn8L1Juw=", "id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mTransportation Load (0.4ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;36;1mKebab Update (0.4ms)[0m   [0;1mUPDATE "kebabs" SET "updated_at" = '2010-01-20 21:16:00', "promoter_id" = 2 WHERE "id" = 4[0m
+Redirected to http://localhost:3000/kebabs/4
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/kebabs/4]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-20 22:16:00) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/kebabs/4]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-20 22:16:03) [GET]
+  [4;36;1mKebab Load (0.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-20 22:16:04) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (27.7ms)
+Completed in 37ms (View: 29, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]

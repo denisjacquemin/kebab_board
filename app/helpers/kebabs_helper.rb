@@ -1,0 +1,2 @@
+module KebabsHelper
+end

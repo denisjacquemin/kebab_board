@@ -1,0 +1,13 @@
+<p>
+  <b>Date:</b>
+  <%=h @kebab.date %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @kebab.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_kebab_path(@kebab) %> |
+<%= link_to 'Back', kebabs_path %>
