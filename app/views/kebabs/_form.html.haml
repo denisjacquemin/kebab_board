@@ -1,6 +1,6 @@
 - content_for :css do
   = stylesheet_link_tag 'add_edit_kebab', 'form'
-- form_for(@kebab, :html => {:class => 'form'}) do |f|
+- nested_form_for(@kebab, :html => {:class => 'form'}) do |f|
   .row
     #date
       = f.label :date
@@ -13,15 +13,21 @@
         = select 'kebab', 'promoter_id', Person.all.collect{|person| [person.name, person.id]}
   .row
     #transportations
-      = f.label :person_id, "Voiture(s)"
-      %br
-      - f.fields_for :transportations do |builder|
-        = render 'transportation_fields', :f => builder
+      = f.label :person_id, "Voiture(s)" 
+      %br      
+      .fields
+        - f.fields_for :transportations do |builder|
+          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+          = builder.link_to_remove 'effacer'
+        = f.link_to_add "ajouter", :transportations
     #participations
       = f.label :person_id, "Participants"
       %br
-      - f.fields_for :participations do |builder|
-        = render 'participation_fields', :f => builder
+      .fields
+        - f.fields_for :participations do |builder|
+          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+          = builder.link_to_remove 'effacer'
+        = f.link_to_add "ajouter", :participations
   .row
     #comment
       = f.label :comment, 'Commentaires'
@@ -29,6 +35,5 @@
       = f.text_area :comment
   .buttons
     = f.submit button_label
-
     
 

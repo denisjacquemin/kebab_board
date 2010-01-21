@@ -7132,3 +7132,1859 @@ ActionController::RoutingError (No route matches "/images/alert-overlay.png" wit
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:25:17) [GET]
+  [4;36;1mKebab Load (1.6ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (6.9ms)
+Rendered shared/_footer (5.3ms)
+Completed in 220ms (View: 161, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:25:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:25:22) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:25:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:25:32) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.8ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (24.5ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (12.9ms)
+Rendered kebabs/_form (246.8ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 413ms (View: 263, DB: 1) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:25:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:25:43) [GET]
+
+ActionController::RoutingError (No route matches "/contacts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:25:57) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:25:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 21:26:07) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 11) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+Rendered kebabs/_form (28.9ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 134ms (View: 126, DB: 1) | 200 OK [http://localhost/kebabs/11/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:26:07) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:26:11) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:26:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:31:00) [GET]
+  [4;36;1mKebab Load (1.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (1.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 59ms (View: 42, DB: 2) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:31:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:31:41) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.2ms)
+Completed in 39ms (View: 25, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:31:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:32:03) [GET]
+  [4;36;1mKebab Load (1.1ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:32:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:36:35) [GET]
+  [4;35;1mKebab Load (1.3ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+ERROR: compiling _run_haml_app47views47layouts47application46html46haml RAISED compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC
+Function body:           def _run_haml_app47views47layouts47application46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :preserve=>["textarea", "pre"], :format=>:xhtml, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <title>nice-layout</title>\n    #{_hamlout.adjust_tabs(2); haml_temp =  stylesheet_link_tag 'wrapper', 'header', 'tab', 'global', 'awesome-button', 'table'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :css
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  google_jquery :version => '1.4.0', 'nested_form'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :javascript
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n  </head>\n  <body>\n    <div id='center'>\n      <div id='header'>\n        <h1>\n          The kebab board\n        </h1>\n        #{_hamlout.adjust_tabs(2); haml_temp =  render :partial => 'shared/tabs'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div id='wrapper'>\n        #{haml_temp =  yield
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  render :partial => 'shared/footer'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div class='clear'></div>\n    </div>\n  </body>\n</html>\n", -4, false);@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:23:in `compile!'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/denisjacquemin/Documents/Projects/kebab/app/controllers/kebabs_controller.rb:7:in `index'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `sass_old_process'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC) on line #15 of app/views/layouts/application.html.haml:
+12:         %h1 
+13:           The kebab board
+14:         = render :partial => 'shared/tabs'
+15:         .clear
+16:       #wrapper
+17:         = yield
+18:         = render :partial => 'shared/footer'
+
+    app/views/layouts/application.html.haml:23:in `compile!'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:7:in `index'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:38:13) [GET]
+  [4;36;1mKebab Load (1.1ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+ERROR: compiling _run_haml_app47views47layouts47application46html46haml RAISED compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC
+Function body:           def _run_haml_app47views47layouts47application46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :preserve=>["textarea", "pre"], :format=>:xhtml, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <title>nice-layout</title>\n    #{_hamlout.adjust_tabs(2); haml_temp =  stylesheet_link_tag 'wrapper', 'header', 'tab', 'global', 'awesome-button', 'table'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :css
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  google_jquery :version => '1.4.0', 'nested_form'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :javascript
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n  </head>\n  <body>\n    <div id='center'>\n      <div id='header'>\n        <h1>\n          The kebab board\n        </h1>\n        #{_hamlout.adjust_tabs(2); haml_temp =  render :partial => 'shared/tabs'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div id='wrapper'>\n        #{haml_temp =  yield
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  render :partial => 'shared/footer'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div class='clear'></div>\n    </div>\n  </body>\n</html>\n", -4, false);@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:23:in `compile!'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/denisjacquemin/Documents/Projects/kebab/app/controllers/kebabs_controller.rb:7:in `index'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `sass_old_process'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC) on line #15 of app/views/layouts/application.html.haml:
+12:         %h1 
+13:           The kebab board
+14:         = render :partial => 'shared/tabs'
+15:         .clear
+16:       #wrapper
+17:         = yield
+18:         = render :partial => 'shared/footer'
+
+    app/views/layouts/application.html.haml:23:in `compile!'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:7:in `index'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (126.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:38:29) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:38:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:38:35) [GET]
+  [4;36;1mKebab Load (1.1ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+ERROR: compiling _run_haml_app47views47layouts47application46html46haml RAISED compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC
+Function body:           def _run_haml_app47views47layouts47application46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :preserve=>["textarea", "pre"], :format=>:xhtml, :attr_wrapper=>"'"});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+
+
+
+
+
+
+
+
+_hamlout.push_text("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n  <head>\n    <title>nice-layout</title>\n    #{_hamlout.adjust_tabs(2); haml_temp =  stylesheet_link_tag 'wrapper', 'header', 'tab', 'global', 'awesome-button', 'table'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :css
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  google_jquery :version => '1.4.0', 'nested_form'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    #{haml_temp =  yield :javascript
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n  </head>\n  <body>\n    <div id='center'>\n      <div id='header'>\n        <h1>\n          The kebab board\n        </h1>\n        #{_hamlout.adjust_tabs(2); haml_temp =  render :partial => 'shared/tabs'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div id='wrapper'>\n        #{haml_temp =  yield
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  render :partial => 'shared/footer'
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        <div class='clear'></div>\n      </div>\n      <div class='clear'></div>\n    </div>\n  </body>\n</html>\n", -4, false);@haml_buffer = @haml_buffer.upper;_erbout;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:23:in `compile!'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render_without_haml'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/haml/helpers/action_view_mods.rb:14:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/denisjacquemin/Documents/Projects/kebab/app/controllers/kebabs_controller.rb:7:in `index'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `sass_old_process'
+/Users/denisjacquemin/Documents/Projects/kebab/vendor/plugins/haml/rails/../lib/sass/plugin/rails.rb:19:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/Users/denisjacquemin/.gem/ruby/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/denisjacquemin/Documents/Projects/kebab/app/views/layouts/application.html.haml:15: syntax error, unexpected '\n', expecting tASSOC) on line #15 of app/views/layouts/application.html.haml:
+12:         %h1 
+13:           The kebab board
+14:         = render :partial => 'shared/tabs'
+15:         .clear
+16:       #wrapper
+17:         = yield
+18:         = render :partial => 'shared/footer'
+
+    app/views/layouts/application.html.haml:23:in `compile!'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:7:in `index'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (52.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:39:31) [GET]
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 26ms (View: 18, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:39:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:39:39) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (83.2ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 200ms (View: 96, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:39:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:42:29) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.6ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `person_id' for #<Kebab:0x1036549e8>) on line #49 of app/views/kebabs/_form.html.haml:
+46:       = f.label :person_id, "Voiture(s)"
+47:       %br      
+48:       - f.fields_for :transportations do |builder|
+49:         = f.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:49:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:48:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (153.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:43:11) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.0ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (wrong number of arguments (0 for 1)) on line #50 of app/views/kebabs/_form.html.haml:
+47:       %br      
+48:       - f.fields_for :transportations do |builder|
+49:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:50:in `link_to_remove'
+    app/views/kebabs/_form.html.haml:50:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:48:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (78.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:43:43) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `_destroy' for #<Transportation:0x103214220>) on line #50 of app/views/kebabs/_form.html.haml:
+47:       %br      
+48:       - f.fields_for :transportations do |builder|
+49:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove 'delete'
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:50:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:48:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (164.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:44:34) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `_destroy' for #<Transportation:0x1035e1bc8>) on line #50 of app/views/kebabs/_form.html.haml:
+47:       %br      
+48:       - f.fields_for :transportations do |builder|
+49:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove 'delete'
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:50:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:48:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (158.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:44:53) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.7ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `_destroy' for #<Transportation:0x10339ace8>) on line #50 of app/views/kebabs/_form.html.haml:
+47:       %br      
+48:       - f.fields_for :transportations do |builder|
+49:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove 'delete'
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:50:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:48:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (83.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:45:07) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined local variable or method `builder' for #<ActionView::Base:0x1033fa6c0>) on line #51 of app/views/kebabs/_form.html.haml:
+48:       - f.fields_for :transportations do |builder|
+49:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+50:         = builder.link_to_remove 'delete'
+51:       = builder.link_to_add "transportations", :transportations
+52:     
+
+    app/views/kebabs/_form.html.haml:51:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:33:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (146.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:45:23) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (33.5ms)
+Rendered shared/_tabs (1.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 74ms (View: 54, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:47:03) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `link_to_remove' for #<ActionView::Helpers::FormBuilder:0x103459530>) on line #2 of app/views/kebabs/_transportation_fields.html.haml:
+1: = f.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+2: = f.link_to_remove 'delete'
+
+    app/views/kebabs/_transportation_fields.html.haml:2:in `_run_haml_app47views47kebabs47_transportation_fields46html46haml_locals_f_object_transportation_fields'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/_form.html.haml:19:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:18:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:3:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (157.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:48:33) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.8ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (116.7ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 145ms (View: 124, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:48:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:49:05) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `link_to_remove' for #<ActionView::Helpers::FormBuilder:0x1033267d0>) on line #20 of app/views/kebabs/_form.html.haml:
+17:       %br      
+18:       - f.fields_for :transportations do |builder|
+19:         = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+20:         = builder.link_to_remove 'delete'
+21:       = f.link_to_add "transportations", :transportations
+22:     #participations
+23:       = f.label :person_id, "Participants"
+
+    app/views/kebabs/_form.html.haml:20:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:18:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:165:in `form_for'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `call'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:450:in `haml_bind_proc'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:171:in `form_for'
+    app/views/kebabs/_form.html.haml:3:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/new.html.haml:12:in `_run_haml_app47views47kebabs47new46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    app/controllers/kebabs_controller.rb:32:in `new'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:49:25) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (114.5ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 143ms (View: 122, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:49:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:49:33) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (37.6ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 66ms (View: 45, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:49:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:50:01) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (37.8ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 67ms (View: 45, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:50:18) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.0ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (23.8ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 116ms (View: 30, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:50:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 21:50:45) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"test enfin", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"1264107023020"=>{"_delete"=>"", "person_id"=>"1"}, "1264107032304"=>{"_delete"=>"1", "person_id"=>"3"}, "0"=>{"_delete"=>"", "person_id"=>"3"}, "1264107026306"=>{"_delete"=>"", "person_id"=>"2"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec="}
+  [4;35;1mKebab Create (0.5ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('test enfin', '2010-01-21 20:50:45', '2010-01-21 20:50:45', '2010-01-21', 1)[0m
+Redirected to http://localhost:3000/kebabs/12
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 21:50:45) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/kebabs/12]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:50:47) [GET]
+  [4;35;1mKebab Load (1.2ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 27ms (View: 20, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:50:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 21:50:49) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 12) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (31.3ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 48ms (View: 40, DB: 1) | 200 OK [http://localhost/kebabs/12/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:50:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 21:51:41) [GET]
+  Parameters: {"id"=>"12"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 12) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (107.6ms)
+Rendered shared/_tabs (1.6ms)
+Rendered shared/_footer (1.5ms)
+Completed in 158ms (View: 141, DB: 1) | 200 OK [http://localhost/kebabs/12/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:51:41) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:51:43) [GET]
+  [4;36;1mKebab Load (1.2ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 28ms (View: 20, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:51:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:51:46) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (70.0ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 169ms (View: 80, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:51:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 21:52:00) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"voila", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"1264107114872"=>{"_delete"=>"", "person_id"=>"1"}, "0"=>{"_delete"=>"", "person_id"=>"2"}, "1264107112157"=>{"_delete"=>"", "person_id"=>"3"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec="}
+  [4;35;1mKebab Create (0.7ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('voila', '2010-01-21 20:52:00', '2010-01-21 20:52:00', '2010-01-21', 1)[0m
+Redirected to http://localhost:3000/kebabs/13
+Completed in 15ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 21:52:00) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 13) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 86ms (View: 9, DB: 0) | 200 OK [http://localhost/kebabs/13]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:54:43) [GET]
+  [4;35;1mKebab Load (1.2ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:54:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 21:54:45) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (24.1ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 52ms (View: 31, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:54:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 21:54:51) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"fdfdfd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"2"}, "1264107288673"=>{"_delete"=>"", "person_id"=>"1"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec="}
+  [4;36;1mKebab Create (0.4ms)[0m   [0;1mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('fdfdfd', '2010-01-21 20:54:51', '2010-01-21 20:54:51', '2010-01-21', 1)[0m
+Redirected to http://localhost:3000/kebabs/14
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 21:54:51) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/14]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 21:54:53) [GET]
+  [4;36;1mKebab Load (1.2ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 21ms (View: 14, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:54:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 21:54:55) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 14) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.2ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 14) [0m
+  [4;35;1mParticipation Load (0.2ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (99.2ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 110ms (View: 102, DB: 1) | 200 OK [http://localhost/kebabs/14/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 21:54:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:17:47) [GET]
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (1.7ms)
+Rendered shared/_footer (1.4ms)
+Completed in 68ms (View: 52, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:17:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 22:17:49) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (142.8ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 226ms (View: 156, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:17:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 22:18:08) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"ca marche", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"2"}, "1264108674567"=>{"_delete"=>"", "person_id"=>"3"}, "1264108680243"=>{"_delete"=>"", "person_id"=>"1"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec="}
+  [4;35;1mKebab Create (0.5ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('ca marche', '2010-01-21 21:18:08', '2010-01-21 21:18:08', '2010-01-21', 1)[0m
+Redirected to http://localhost:3000/kebabs/15
+Completed in 16ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 22:18:08) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/kebabs/15]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:18:09) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:18:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:18:11) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.9ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 15) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (243.6ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 548ms (View: 468, DB: 2) | 200 OK [http://localhost/kebabs/15/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:18:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:20:28) [GET]
+  [4;36;1mKebab Load (1.5ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (1.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 62ms (View: 46, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:20:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:20:31) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.2ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 15) [0m
+  [4;35;1mParticipation Load (0.2ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+
+ActionView::TemplateError (undefined method `_destroy' for #<Transportation:0x1033f9018>) on line #21 of app/views/kebabs/_form.html.haml:
+18:       .fields
+19:         - f.fields_for :transportations do |builder|
+20:           = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+21:           = builder.link_to_remove 'delete'
+22:         = f.link_to_add "ajouter", :transportations
+23:     #participations
+24:       = f.label :person_id, "Participants"
+
+    app/views/kebabs/_form.html.haml:21:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    app/views/kebabs/_form.html.haml:3:in `_run_haml_app47views47kebabs47_form46html46haml_locals_button_label_form_object'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers.rb:57:in `non_haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/kebabs/edit.html.haml:14:in `_run_haml_app47views47kebabs47edit46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (134.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:32:44) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 15) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (112.4ms)
+Rendered shared/_tabs (1.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 165ms (View: 146, DB: 1) | 200 OK [http://localhost/kebabs/15/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:32:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 22:33:00) [PUT]
+  Parameters: {"commit"=>"Sauver", "kebab"=>{"comment"=>"ca marche", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "promoter_attributes"=>{"id"=>"1"}, "transportations_attributes"=>{"1264109567540"=>{"_destroy"=>"", "person_id"=>"1"}, "1264109573306"=>{"_destroy"=>"", "person_id"=>"3"}, "1264109570595"=>{"_destroy"=>"", "person_id"=>"2"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec=", "id"=>"15"}
+  [4;36;1mKebab Load (0.4ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+  [4;35;1mPerson Load (0.5ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mTransportation Create (0.5ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:00', '2010-01-21 21:33:00', 1, 15)[0m
+  [4;35;1mTransportation Create (0.1ms)[0m   [0mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:00', '2010-01-21 21:33:00', 2, 15)[0m
+  [4;36;1mTransportation Create (0.1ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:00', '2010-01-21 21:33:00', 3, 15)[0m
+Redirected to http://localhost:3000/kebabs/15
+Completed in 101ms (DB: 2) | 302 Found [http://localhost/kebabs/15]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 22:33:00) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.2ms)
+Rendered shared/_footer (0.1ms)
+Completed in 20ms (View: 11, DB: 0) | 200 OK [http://localhost/kebabs/15]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:33:02) [GET]
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 32ms (View: 23, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:33:04) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 15) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.5ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (109.1ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 121ms (View: 112, DB: 2) | 200 OK [http://localhost/kebabs/15/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:33:10) [GET]
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 22ms (View: 14, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 22:33:10) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+DEPRECATION WARNING: _delete is deprecated in nested attributes. Use _destroy instead.. (called from _delete at /Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/nested_attributes.rb:263)
+Rendered kebabs/_participation_fields (2.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (151.2ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 252ms (View: 161, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 22:33:29) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"test concluant", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"1264109594632"=>{"_destroy"=>"", "person_id"=>"1"}, "0"=>{"_destroy"=>"", "person_id"=>"2"}, "1264109597410"=>{"_destroy"=>"", "person_id"=>"3"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec="}
+  [4;35;1mKebab Create (0.5ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('test concluant', '2010-01-21 21:33:29', '2010-01-21 21:33:29', '2010-01-21', 1)[0m
+  [4;36;1mTransportation Create (0.1ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:29', '2010-01-21 21:33:29', 2, 16)[0m
+  [4;35;1mTransportation Create (0.1ms)[0m   [0mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:29', '2010-01-21 21:33:29', 1, 16)[0m
+  [4;36;1mTransportation Create (0.1ms)[0m   [0;1mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:29', '2010-01-21 21:33:29', 3, 16)[0m
+  [4;35;1mParticipation Create (0.2ms)[0m   [0mINSERT INTO "participations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:33:29', '2010-01-21 21:33:29', 1, 16)[0m
+Redirected to http://localhost:3000/kebabs/16
+Completed in 108ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 22:33:29) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/16]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:33:31) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:33:32) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.4ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mParticipation Load (0.3ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+DEPRECATION WARNING: _delete is deprecated in nested attributes. Use _destroy instead.. (called from _delete at /Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/nested_attributes.rb:263)
+Rendered kebabs/_participation_fields (1.9ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (110.8ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 122ms (View: 113, DB: 2) | 200 OK [http://localhost/kebabs/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 22:33:38) [PUT]
+  Parameters: {"commit"=>"Sauver", "kebab"=>{"comment"=>"test concluant", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "promoter_attributes"=>{"id"=>"1"}, "participations_attributes"=>{"0"=>{"_delete"=>"", "id"=>"2", "person_id"=>"1"}}, "transportations_attributes"=>{"0"=>{"id"=>"10", "_destroy"=>"", "person_id"=>"3"}, "1"=>{"id"=>"11", "_destroy"=>"", "person_id"=>"1"}, "2"=>{"id"=>"12", "_destroy"=>"", "person_id"=>"3"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec=", "id"=>"16"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mTransportation Load (1.2ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;35;1mParticipation Load (0.3ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;36;1mTransportation Update (0.4ms)[0m   [0;1mUPDATE "transportations" SET "person_id" = 3, "updated_at" = '2010-01-21 21:33:38' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/kebabs/16
+Completed in 43ms (DB: 2) | 302 Found [http://localhost/kebabs/16]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 22:33:38) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mKebab Load (0.3ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/16]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:33:39) [GET]
+  [4;36;1mKebab Load (2.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 25ms (View: 15, DB: 2) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:33:42) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.4ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+DEPRECATION WARNING: _delete is deprecated in nested attributes. Use _destroy instead.. (called from _delete at /Users/denisjacquemin/.gem/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/nested_attributes.rb:263)
+Rendered kebabs/_participation_fields (1.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (43.2ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 54ms (View: 46, DB: 2) | 200 OK [http://localhost/kebabs/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:33:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:34:44) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.4ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (48.7ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 64ms (View: 55, DB: 2) | 200 OK [http://localhost/kebabs/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:34:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 22:34:53) [PUT]
+  Parameters: {"commit"=>"Sauver", "kebab"=>{"comment"=>"test concluant", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "promoter_attributes"=>{"id"=>"1"}, "participations_attributes"=>{"1264109688693"=>{"_destroy"=>"", "person_id"=>"3"}, "0"=>{"id"=>"2", "_destroy"=>"", "person_id"=>"2"}}, "transportations_attributes"=>{"0"=>{"id"=>"10", "_destroy"=>"", "person_id"=>"3"}, "1"=>{"id"=>"11", "_destroy"=>"", "person_id"=>"1"}, "2"=>{"id"=>"12", "_destroy"=>"", "person_id"=>"3"}}, "promoter_id"=>"1"}, "authenticity_token"=>"BFlPuIk1eMleUa/MJDKTdSAm+e7OXh/P58ll2dprAec=", "id"=>"16"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mTransportation Load (0.5ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;35;1mParticipation Load (0.3ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;36;1mParticipation Update (0.4ms)[0m   [0;1mUPDATE "participations" SET "person_id" = 2, "updated_at" = '2010-01-21 21:34:54' WHERE "id" = 2[0m
+  [4;35;1mParticipation Create (0.2ms)[0m   [0mINSERT INTO "participations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 21:34:54', '2010-01-21 21:34:54', 3, 16)[0m
+Redirected to http://localhost:3000/kebabs/16
+Completed in 116ms (DB: 2) | 302 Found [http://localhost/kebabs/16]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 22:34:54) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/16]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 22:34:55) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 23ms (View: 15, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:34:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 22:34:57) [GET]
+  Parameters: {"id"=>"16"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.5ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mParticipation Load (0.4ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (48.0ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 60ms (View: 51, DB: 2) | 200 OK [http://localhost/kebabs/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 22:34:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
