@@ -1,6 +1,6 @@
 - content_for :css do
   = stylesheet_link_tag 'add_edit_kebab', 'form'
-- form_for(@kebab, :class => 'form') do |f|
+- form_for(@kebab, :html => {:class => 'form'}) do |f|
   .row
     #date
       = f.label :date
@@ -13,9 +13,13 @@
         = select 'kebab', 'promoter_id', Person.all.collect{|person| [person.name, person.id]}
   .row
     #transportations
+      = f.label :person_id, "Voiture(s)"
+      %br
       - f.fields_for :transportations do |builder|
         = render 'transportation_fields', :f => builder
     #participations
+      = f.label :person_id, "Participants"
+      %br
       - f.fields_for :participations do |builder|
         = render 'participation_fields', :f => builder
   .row
