@@ -1,0 +1,137 @@
+@import defines.sass
+
+#center
+  :margin auto
+  :width = !siteWidth
+  :background
+    :color #E5E5E5
+  :align center
+
+#wrapper
+  :width 100%
+  :padding 0
+  :text-align left
+  :float left
+
+  #main-content
+    :width = !mainContentWidth
+    :float left
+    :padding 0
+    
+    #align
+      :padding 20px 0 0 20px
+    
+      .bloc
+        :background #ffffff url('../images/right-bg.gif') repeat-y right        
+        :padding 0 8px 0 0
+        :margin 0
+        :float left
+        :width 100%
+        
+        
+        .header
+          :background = !lightBlue
+          :padding 10px 20px
+          :border-bottom 1px solid #E0F0F0
+          
+          h1
+            :color #000000
+            :font
+              :size 22px
+              :family "Lucida Grande",arial,sans-serif
+            :margin 0
+            :padding 0
+            :display inline
+          
+            span
+              :float left
+            
+            .sub-tabs
+              :color #CCCCCC
+              :font-size 12px
+              :float left
+              :margin 0 0 0 5px
+              :float left
+            
+            .actions
+              :float right
+              :font-size 12px
+              :display inline
+              :float right
+        
+        .content
+          :background #fff
+          :padding 20px
+          
+          h2
+            :color #333333
+            :font
+              :size 14px
+              :family "Lucida Grande",arial,sans-serif
+            :margin 0
+            :padding 0
+            :display inline
+            
+            span
+              :float left
+          
+            .right
+              :font-size 11px
+              :text-align right
+              :float right
+              :color #555555
+              :font-weight normal
+            
+          p
+            :font-size 12px
+            :line-height 16px
+            
+      .bloc-bottom
+        :background transparent url(../images/bottom-bg.gif) no-repeat scroll right top
+        :height 7px
+        :margin 0
+        :padding 0 8px 0 0
+        :float left
+        :width 100%
+        
+  #sidebar
+    :width = !sidebarWidth
+    :float right
+    
+    .row
+      :margin 5px 0
+    .bigrow
+      :margin 10px 0
+    .verybigrow
+      :margin 15px 0
+    .bloc
+      :margin 20px 20px 0 20px
+    
+      h2
+        :border-bottom 1px solid #ccc
+        :border-right 1px solid #ccc
+        :color #333333
+        :font
+          :size 12px
+          :weight bold
+        :margin 0 0 15px 0
+        :padding 2px 5px
+        :background #F0F0F0
+      
+      p
+        :font-size 12px
+        :line-height 1.4em
+        :margin 0 0 20px
+        :padding 10px 5px
+
+#footer
+  :clear both
+  :padding 10px 0 20px 20px
+  :font-family Arial
+  :font-size 11px
+  :color #777
+  :line-height 14px
+  a
+    :color #777
+    :text-decoration underline 
+    

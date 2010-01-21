@@ -1,5 +1,5 @@
 <p>
-  <%= f.label :person_id, "Participant" %><br />
+  <%= f.label :person_id, "Participants" %><br />
   <%= f.collection_select :person_id, Person.all, :id, :name, {:multiple => true}%>
   <%= link_to_remove_fields 'effacer', f %>
 </p>

@@ -1,0 +1,28 @@
+- content_for :css do
+  = stylesheet_link_tag 'add_edit_kebab', 'form'
+.form
+  .row
+    #date
+      = f.label :date
+      %br
+      = f.date_select :date
+    #promoter
+      - f.fields_for :promoter do |builder|
+        = builder.label :promoter_id, "Organisateur"
+        %br
+        = select 'kebab', 'promoter_id', Person.all.collect{|person| [person.name, person.id]}
+  .row
+    #transportations
+      - f.fields_for :transportations do |builder|
+        = render 'transportation_fields', :f => builder
+    #participations
+      - f.fields_for :participations do |builder|
+        = render 'participation_fields', :f => builder
+  .row
+    #comment
+      = f.label :comment, 'Commentaires'
+      %br
+      = f.text_area :comment
+
+    
+

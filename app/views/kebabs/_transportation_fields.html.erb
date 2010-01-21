@@ -1,5 +1,5 @@
 <p class="fields">
-  <%= f.label :person_id, "Voiture" %><br />
+  <%= f.label :person_id, "Voiture(s)" %><br />
   <%= f.collection_select :person_id, Person.all, :id, :name, {:multiple => true} %>
   <%= link_to_remove_fields 'effacer', f %>
 </p>

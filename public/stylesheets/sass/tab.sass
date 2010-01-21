@@ -1,0 +1,44 @@
+@import defines.sass
+
+#navigation
+  :margin 0 20px
+  :padding 0
+
+#navigation ul
+  :list-style-image none
+  :list-style-position outside
+  :list-style-type none
+  :margin 0
+  :padding 0
+  :float left
+  :padding-top 5px
+
+#navigation ul.float-right
+  :float right
+
+#navigation li
+  :float left
+  :font-family Arial
+  :font-size 13px
+  :margin-right 2px
+
+#navigation li a
+  :display block
+  
+  :padding 5px 8px 6px
+  :background #333333 none repeat scroll 0 0
+  :color #FFFFFF
+  :font-size 0.9em
+  :text-decoration none
+  
+#navigation li a:hover
+  :background = !aHoverBg
+
+#navigation a.current
+  :background #E5E5E5 none repeat scroll 0 0
+  :color #003366
+  :font-weight bold
+
+#navigation li a:hover.current
+  :background #E5E5E5
+
