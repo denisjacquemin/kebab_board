@@ -1,0 +1,32 @@
+#header {
+  margin: 0;
+  padding: 1px 0 0;
+  position: relative;
+  text-align: left;
+  background-color: #333333;
+  float: left;
+  width: 100%; }
+  #header h3 {
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: normal;
+    width: 300px;
+    text-align: right;
+    float: right;
+    padding: 0;
+    margin: 10px 20px 0 0;
+    color: #999999; }
+    #header h3 a {
+      padding: 6px 3px;
+      color: #999999; }
+    #header h3 a:hover {
+      background-color: #555555;
+      color: #fff;
+      text-decoration: none; }
+  #header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 7px 0 0 20px;
+    padding: 0 0 10px 0;
+    text-align: left;
+    color: #FFFFFF; }

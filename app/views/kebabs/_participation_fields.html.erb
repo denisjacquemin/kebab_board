@@ -1,0 +1,6 @@
+<p>
+  <%= f.label :person_id, "Participant" %><br />
+  <%= f.collection_select :person_id, Person.all, :id, :name, {:multiple => true}%>
+  <%= link_to_remove_fields 'effacer', f %>
+</p>
+<p><% #= link_to_add_fields 'ajouter un participant', f, :participations %>

@@ -1,0 +1,13 @@
+#main-content
+  #align
+    .bloc
+      .header 
+        %h1 Ajout kebab
+      .content
+        = render 'form'
+    .bloc-bottom
+#sidebar
+  .bloc
+    %h2 Actions
+    .verybigrow
+      = link_to 'Listing kebab', kebabs_path, :class => 'awesome small green'

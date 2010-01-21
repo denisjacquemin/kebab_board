@@ -1,0 +1,74 @@
+.form {
+  width: 100%;
+  font-size: 13px;
+  float: left;
+  width: 100%; }
+  .form label {
+    font-size: 13px;
+    font-weight: bold; }
+  .form .help {
+    font-size: 12px;
+    color: #777; }
+
+.row {
+  margin: 20px 0;
+  float: left;
+  width: 100%;
+  clear: both; }
+
+#address {
+  background: #eee;
+  float: left;
+  width: 100%;
+  padding: 10px 0; }
+  #address #address1 {
+    clear: both;
+    padding: 0 10px; }
+    #address #address1 .street {
+      float: left;
+      width: 45%; }
+      #address #address1 .street input {
+        width: 250px; }
+    #address #address1 .number {
+      float: left;
+      width: 10%; }
+      #address #address1 .number input {
+        width: 30px; }
+    #address #address1 .box {
+      float: left;
+      width: 45%; }
+      #address #address1 .box input {
+        width: 40px; }
+  #address #address2 {
+    clear: both;
+    padding: 0 10px; }
+    #address #address2 .zip {
+      float: left;
+      width: 15%; }
+      #address #address2 .zip input {
+        width: 40px; }
+    #address #address2 .city {
+      float: left;
+      width: 30%; }
+      #address #address2 .city input {
+        width: 165px; }
+    #address #address2 .country {
+      float: left;
+      width: 55%; }
+      #address #address2 .country input {
+        width: 150px; }
+
+textarea {
+  padding: 3px; }
+
+.buttons {
+  border-top: 1px dashed #aaa;
+  padding: 15px 0 0 0;
+  margin: 20px 0;
+  float: left;
+  width: 100%; }
+
+input.big {
+  height: 25px;
+  font-size: 18px;
+  padding: 3px; }

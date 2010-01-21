@@ -1,0 +1,29 @@
+#main-content
+  #align
+    .bloc
+      .header 
+        %h1 Listing kebabs
+      .content
+        %table
+          %tr
+            %th
+              Date
+            %th
+              Commentaires
+        
+          - @kebabs.each do |kebab|
+            %tr
+              %td
+                = kebab.date
+              %td
+                = kebab.comment
+              %td
+                = link_to 'Edit', edit_kebab_path(kebab)
+              %td
+                = link_to 'Destroy', kebab, :confirm => 'Are you sure?', :method => :delete
+    .bloc-bottom
+#sidebar
+  .bloc
+    %h2 Actions
+    .verybigrow
+      = link_to 'Ajouter un kebab', new_kebab_path, :class => 'awesome small green'

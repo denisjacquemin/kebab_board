@@ -11,16 +11,10 @@
     </p>
   <% end %>
   <% f.fields_for :transportations do |builder| %>
-    <p>
-      <%= builder.label :person_id, "Voiture" %><br />
-      <%= builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}%>
-    </p>
+    <%= render 'transportation_fields', :f => builder %>
   <% end %>
   <% f.fields_for :participations do |builder| %>
-    <p>
-      <%= builder.label :person_id, "Participant" %><br />
-      <%= builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}%>
-    </p>
+    <%= render 'participation_fields', :f => builder %>
   <% end %>
   <p>
     <%= f.label :comment %><br />
