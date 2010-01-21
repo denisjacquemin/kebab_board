@@ -26,7 +26,8 @@ class KebabsController < ApplicationController
   def new
     @kebab = Kebab.new
     @kebab.build_promoter
-    2.times{ @kebab.transportations << Transportation.new }
+    @kebab.transportations << Transportation.new
+    @kebab.participations << Participation.new
     
     respond_to do |format|
       format.html # new.html.erb

@@ -2445,3 +2445,234 @@ Rendering kebabs/edit
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
 Rendered kebabs/_form (27.7ms)
 Completed in 37ms (View: 29, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:21:08) [GET]
+  [4;36;1mKebab Load (1.2ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 182ms (View: 134, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:21:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (6.9ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (51.1ms)
+Completed in 82ms (View: 68, DB: 8) | 200 OK [http://localhost/kebabs/4/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateKebabs (20100120171450)
+Migrating to CreatePeople (20100120171940)
+Migrating to AddPromoterIdToKebabs (20100120172152)
+Migrating to CreateTransportations (20100120180338)
+Migrating to CreateParticipations (20100121062240)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "participations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "kebab_id" integer, "person_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100121062240')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("kebabs")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("participations")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("people")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("transportations")[0m
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:24:48) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mParticipation Load (0.2ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+Rendered kebabs/_form (34.0ms)
+Completed in 112ms (View: 39, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:25:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.4ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+Rendered kebabs/_form (31.9ms)
+Completed in 41ms (View: 33, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:25:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mParticipation Load (0.2ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+Rendered kebabs/_form (98.5ms)
+Completed in 108ms (View: 99, DB: 2) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:25:57) [GET]
+  [4;36;1mKebab Load (0.7ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 26ms (View: 19, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 07:25:59) [GET]
+
+NameError (uninitialized constant KebabsController::Participant):
+  app/controllers/kebabs_controller.rb:30:in `new'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 07:26:17) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (131.7ms)
+Completed in 172ms (View: 152, DB: 0) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 07:26:44) [POST]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"Un bon kebab", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "participations_attributes"=>{"0"=>{"person_id"=>"2"}}, "transportations_attributes"=>{"0"=>{"person_id"=>"3"}}, "promoter_id"=>"2"}, "authenticity_token"=>"ewq/koKrom3bFD3OQCwr83tWkNsH1W3tFb2ujcncrvY="}
+  [4;36;1mKebab Create (0.5ms)[0m   [0;1mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('Un bon kebab', '2010-01-21 06:26:44', '2010-01-21 06:26:44', '2010-01-20', 2)[0m
+  [4;35;1mTransportation Create (0.2ms)[0m   [0mINSERT INTO "transportations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 06:26:44', '2010-01-21 06:26:44', 3, 5)[0m
+  [4;36;1mParticipation Create (0.2ms)[0m   [0;1mINSERT INTO "participations" ("created_at", "updated_at", "person_id", "kebab_id") VALUES('2010-01-21 06:26:44', '2010-01-21 06:26:44', 2, 5)[0m
+Redirected to http://localhost:3000/kebabs/5
+Completed in 63ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 07:26:44) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 96ms (View: 17, DB: 0) | 200 OK [http://localhost/kebabs/5]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:26:46) [GET]
+  [4;36;1mKebab Load (0.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 31ms (View: 24, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:26:49) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.3ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.3ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (33.8ms)
+Completed in 42ms (View: 35, DB: 1) | 200 OK [http://localhost/kebabs/5/edit]
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 07:26:58) [PUT]
+  Parameters: {"commit"=>"Create", "kebab"=>{"comment"=>"Un bon kebab", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"20", "promoter_attributes"=>{"id"=>"2"}, "participations_attributes"=>{"0"=>{"id"=>"1", "person_id"=>"1"}}, "transportations_attributes"=>{"0"=>{"id"=>"6", "person_id"=>"3"}}, "promoter_id"=>"2"}, "authenticity_token"=>"ewq/koKrom3bFD3OQCwr83tWkNsH1W3tFb2ujcncrvY=", "id"=>"5"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+  [4;35;1mPerson Load (0.2ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;36;1mTransportation Load (0.3ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 5) [0m
+  [4;35;1mParticipation Load (0.4ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mParticipation Update (0.4ms)[0m   [0;1mUPDATE "participations" SET "person_id" = 1, "updated_at" = '2010-01-21 06:26:58' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/kebabs/5
+Completed in 99ms (DB: 2) | 302 Found [http://localhost/kebabs/5]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 07:26:58) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/kebabs/5]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:27:00) [GET]
+  [4;36;1mKebab Load (0.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 07:27:02) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.3ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.3ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (34.0ms)
+Completed in 43ms (View: 35, DB: 1) | 200 OK [http://localhost/kebabs/5/edit]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:27:07) [GET]
+  [4;36;1mKebab Load (0.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 102ms (View: 95, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 07:27:11) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 5) [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/show
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/kebabs/5]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 07:27:13) [GET]
+  [4;36;1mKebab Load (0.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/kebabs
+Rendering kebabs/index
+Completed in 30ms (View: 24, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 07:27:26) [GET]
+Rendering template within layouts/kebabs
+Rendering kebabs/new
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_form (14.5ms)
+Completed in 36ms (View: 16, DB: 0) | 200 OK [http://localhost/kebabs/new]
