@@ -6164,3 +6164,288 @@ ActionController::RoutingError (No route matches "/images/alert-overlay.png" wit
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 19:26:09) [GET]
+  [4;36;1mKebab Load (1.0ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (1.7ms)
+Rendered shared/_footer (0.8ms)
+Completed in 60ms (View: 41, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:26:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 19:26:11) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.4ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.0ms)
+  [4;35;1mParticipation Load (0.3ms)[0m   [0mSELECT * FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+Rendered kebabs/_form (54.3ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 77ms (View: 68, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:26:12) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 19:26:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 2) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.4ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.1ms)
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (1.9ms)
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+Rendered kebabs/_form (39.0ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 55ms (View: 47, DB: 1) | 200 OK [http://localhost/kebabs/4/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:26:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 19:27:10) [GET]
+  [4;35;1mKebab Load (0.9ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#new (for 127.0.0.1 at 2010-01-21 19:27:10) [GET]
+Rendering template within layouts/application
+Rendering kebabs/new
+  [4;36;1mPerson Load (0.5ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+Rendered kebabs/_transportation_fields (2.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_participation_fields (2.7ms)
+Rendered kebabs/_form (67.5ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 99ms (View: 77, DB: 1) | 200 OK [http://localhost/kebabs/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#create (for 127.0.0.1 at 2010-01-21 19:27:22) [POST]
+  Parameters: {"commit"=>"Creer", "kebab"=>{"comment"=>"dfdfdf", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "participations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "transportations_attributes"=>{"0"=>{"_delete"=>"", "person_id"=>"1"}}, "promoter_id"=>"1"}, "authenticity_token"=>"ivIfDvUwnU6688K/tjawBSN9/Bn89/uTfPdjaTCLtks="}
+  [4;35;1mKebab Create (0.5ms)[0m   [0mINSERT INTO "kebabs" ("comment", "created_at", "updated_at", "date", "promoter_id") VALUES('dfdfdf', '2010-01-21 18:27:22', '2010-01-21 18:27:22', '2010-01-21', 1)[0m
+Redirected to http://localhost:3000/kebabs/10
+Completed in 81ms (DB: 1) | 302 Found [http://localhost/kebabs]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 19:27:22) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.3ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/kebabs/10]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 19:27:24) [GET]
+  [4;35;1mKebab Load (1.0ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 19:27:26) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.4ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.3ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 10) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+Rendered kebabs/_form (91.6ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 103ms (View: 94, DB: 1) | 200 OK [http://localhost/kebabs/10/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 19:27:29) [PUT]
+  Parameters: {"commit"=>"Sauver", "kebab"=>{"comment"=>"dfdfdfddffd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "promoter_attributes"=>{"id"=>"1"}, "promoter_id"=>"1"}, "authenticity_token"=>"ivIfDvUwnU6688K/tjawBSN9/Bn89/uTfPdjaTCLtks=", "id"=>"10"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mKebab Update (0.4ms)[0m   [0mUPDATE "kebabs" SET "updated_at" = '2010-01-21 18:27:29', "comment" = 'dfdfdfddffd' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/kebabs/10
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/kebabs/10]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 19:27:29) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/10]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 19:27:30) [GET]
+  [4;35;1mKebab Load (1.0ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 12, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:31) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 19:27:32) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 10) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+Rendered kebabs/_form (27.6ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 39ms (View: 30, DB: 1) | 200 OK [http://localhost/kebabs/10/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#update (for 127.0.0.1 at 2010-01-21 19:27:36) [PUT]
+  Parameters: {"commit"=>"Sauver", "kebab"=>{"comment"=>"dfdfdfddffd", "date(1i)"=>"2010", "date(2i)"=>"1", "date(3i)"=>"21", "promoter_attributes"=>{"id"=>"1"}, "promoter_id"=>"3"}, "authenticity_token"=>"ivIfDvUwnU6688K/tjawBSN9/Bn89/uTfPdjaTCLtks=", "id"=>"10"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+  [4;36;1mPerson Load (0.2ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mKebab Update (0.8ms)[0m   [0mUPDATE "kebabs" SET "updated_at" = '2010-01-21 18:27:36', "promoter_id" = 3 WHERE "id" = 10[0m
+Redirected to http://localhost:3000/kebabs/10
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/kebabs/10]
+
+
+Processing KebabsController#show (for 127.0.0.1 at 2010-01-21 19:27:36) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/show
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/kebabs/10]
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-21 19:27:38) [GET]
+  [4;35;1mKebab Load (1.0ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 19ms (View: 11, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-21 19:27:42) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mKebab Load (0.2ms)[0m   [0;1mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;35;1mPerson Load (0.3ms)[0m   [0mSELECT * FROM "people" WHERE ("people"."id" = 3) [0m
+  [4;36;1mPerson Load (0.3ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mTransportation Load (0.2ms)[0m   [0mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 10) [0m
+  [4;36;1mParticipation Load (0.2ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+Rendered kebabs/_form (26.3ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 38ms (View: 29, DB: 1) | 200 OK [http://localhost/kebabs/10/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-21 19:27:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

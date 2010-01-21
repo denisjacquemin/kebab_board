@@ -4,9 +4,7 @@
       .header 
         %h1 Ajout kebab
       .content
-        - form_for(@kebab) do |f|
-          = render 'form', :f => f
-          = f.submit 'Creer'
+        = render 'form', :button_label => 'Creer'
     .bloc-bottom
 #sidebar
   .bloc
