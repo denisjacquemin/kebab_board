@@ -8988,3 +8988,476 @@ ActionController::RoutingError (No route matches "/images/alert-overlay.png" wit
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-22 22:12:19) [GET]
+  [4;36;1mKebab Load (7.9ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (26.5ms)
+Rendered shared/_footer (6.2ms)
+Completed in 418ms (View: 326, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 22:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#edit (for 127.0.0.1 at 2010-01-22 22:12:22) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mKebab Load (0.2ms)[0m   [0mSELECT * FROM "kebabs" WHERE ("kebabs"."id" = 16) [0m
+Rendering template within layouts/application
+Rendering kebabs/edit
+  [4;36;1mPerson Load (13.5ms)[0m   [0;1mSELECT * FROM "people" WHERE ("people"."id" = 1) [0m
+  [4;35;1mPerson Load (0.4ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mTransportation Load (0.5ms)[0m   [0;1mSELECT * FROM "transportations" WHERE ("transportations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mParticipation Load (0.4ms)[0m   [0;1mSELECT * FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "people" [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "people" [0m
+Rendered kebabs/_form (197.5ms)
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 240ms (View: 218, DB: 15) | 200 OK [http://localhost/kebabs/16/edit]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 22:12:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing KebabsController#index (for 127.0.0.1 at 2010-01-22 22:12:27) [GET]
+  [4;35;1mKebab Load (1.5ms)[0m   [0mSELECT * FROM "kebabs" [0m
+Rendering template within layouts/application
+Rendering kebabs/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/kebabs]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 22:12:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/alert-overlay.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mKebab Load (0.5ms)[0m   [0;1mSELECT * FROM "kebabs" ORDER BY kebabs.id DESC LIMIT 1[0m
+  [4;35;1mKebab Load (1.3ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-22 22:31:19) [GET]
+
+ActionController::RoutingError (No route matches "/contacts" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:31:28) [GET]
+  [4;36;1mKebab Load (1.5ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+
+NoMethodError (undefined method `participants' for #<Kebab:0x1032056f8>):
+  app/controllers/statistics_controller.rb:3:in `index'
+  app/controllers/statistics_controller.rb:3:in `collect'
+  app/controllers/statistics_controller.rb:3:in `index'
+  vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (43.8ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:31:39) [GET]
+  [4;35;1mKebab Load (2.0ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #1 of app/views/statistics/index.html.haml:
+1: = Gchart.bar(:data => [@participations, @weeks])
+
+    (eval):12:in `send'
+    (eval):12:in `bar'
+    app/views/statistics/index.html.haml:1:in `_run_haml_app47views47statistics47index46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (128.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:32:04) [GET]
+  [4;35;1mKebab Load (1.5ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #1 of app/views/statistics/index.html.haml:
+1: = Gchart.bar(:data => [@participations, @weeks])
+
+    (eval):12:in `send'
+    (eval):12:in `bar'
+    app/views/statistics/index.html.haml:1:in `_run_haml_app47views47statistics47index46html46haml'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/haml/helpers/action_view_mods.rb:14:in `render'
+    vendor/plugins/haml/rails/./lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (135.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:32:28) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (1.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 36ms (View: 22, DB: 2) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:32:36) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 22ms (View: 7, DB: 2) | 200 OK [http://localhost/statistics]
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mKebab Load (1.2ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:33:23) [GET]
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (1.9ms)
+Rendered shared/_footer (0.8ms)
+Completed in 135ms (View: 28, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:33:25) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.4ms)
+Completed in 30ms (View: 3, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:33:26) [GET]
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 30ms (View: 3, DB: 4) | 200 OK [http://localhost/statistics]
+  [4;36;1mKebab Load (1.3ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (58.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+  [4;35;1mKebab Load (1.1ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:34:20) [GET]
+  [4;35;1mKebab Load (1.5ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 30ms (View: 4, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:34:35) [GET]
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 59ms (View: 34, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:35:49) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 97ms (View: 7, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:37:32) [GET]
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 35ms (View: 8, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:39:01) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 34ms (View: 8, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:39:15) [GET]
+  [4;36;1mKebab Load (1.4ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 34ms (View: 8, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:39:38) [GET]
+  [4;35;1mKebab Load (1.4ms)[0m   [0mSELECT * FROM "kebabs" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 35ms (View: 10, DB: 4) | 200 OK [http://localhost/statistics]
+
+
+Processing StatisticsController#index (for 127.0.0.1 at 2010-01-22 22:39:53) [GET]
+  [4;36;1mKebab Load (1.8ms)[0m   [0;1mSELECT * FROM "kebabs" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 3) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 4) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 5) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 6) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 7) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 10) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 11) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 12) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 14) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "participations" WHERE ("participations".kebab_id = 16) [0m
+Rendering template within layouts/application
+Rendering statistics/index
+Rendered shared/_tabs (0.1ms)
+Rendered shared/_footer (0.1ms)
+Completed in 102ms (View: 10, DB: 4) | 200 OK [http://localhost/statistics]

@@ -1,0 +1,7 @@
+#main-content
+  #align
+    .bloc
+      .header 
+        %h1 Statistiques
+      .content
+        = image_tag Gchart.bar(:title => "Nombre par semaine", :data => [@participations, @weeks], :theme => :thirty7signals, :axis_with_labels => ['y','x'], :axis_labels => [@participations, @weeks])
