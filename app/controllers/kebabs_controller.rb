@@ -48,7 +48,7 @@ class KebabsController < ApplicationController
     respond_to do |format|
       if @kebab.save
         flash[:notice] = 'Kebab was successfully created.'
-        format.html { redirect_to(@kebab) }
+        format.html { redirect_to(kebabs_url) }
         format.xml  { render :xml => @kebab, :status => :created, :location => @kebab }
       else
         format.html { render :action => "new" }

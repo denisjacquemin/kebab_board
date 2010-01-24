@@ -1,7 +1,17 @@
+- content_for :css do
+  = stylesheet_link_tag 'statistics', 'form'
 #main-content
   #align
     .bloc
       .header 
         %h1 Statistiques
       .content
-        = image_tag Gchart.bar(:title => "Nombre par semaine", :data => [@participations, @weeks], :theme => :thirty7signals, :axis_with_labels => ['y','x'], :axis_labels => [@participations, @weeks])
+        .row
+          %h2 Nombre de participants par semaine
+          .graph
+            = Gchart.sparkline(:size => '500x200', :format => 'image_tag', :data => [@participations, [@average,@average]], :theme => :thirty7signals, :legend => ['par semaine', "moyenne: #{"%.2f" % @average}"], :axis_with_labels => 'x,y', :max_value => @weeks.max, :axis_labels => [@weeks, @x_axis])
+        .row
+          %h2 Les chauffeurs
+          .graph
+            = Gchart.pie_3d(:size => '500x200', :format => 'image_tag', :data => @pieceofpie, :labels => @drivers)
+    .bloc-bottom

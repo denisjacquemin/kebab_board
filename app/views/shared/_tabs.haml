@@ -1,6 +1,6 @@
 %h2{:id => 'navigation'}
   %ul
     %li
-      %a.current{:href => '/kebabs'} Admin kebabs
+      %a{:href => '/kebabs', :class => ('current' if controller_name == 'kebabs')} Admin kebabs
     %li
-      %a{:href => '/statistics'} Statistiques
+      %a{:href => '/statistics', :class => ('current' if controller_name == 'statistics')} Statistiques
