@@ -65,7 +65,7 @@ class KebabsController < ApplicationController
     respond_to do |format|
       if @kebab.update_attributes(params[:kebab])
         flash[:notice] = 'Kebab was successfully updated.'
-        format.html { redirect_to(@kebab) }
+        format.html { redirect_to(kebabs_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
