@@ -14,8 +14,9 @@ class StatisticsController < ApplicationController
     @drivers = @all_transportations.group_by{|t| t.person.name}.keys # build an array of driver's name
     
     by_person = @all_transportations.group_by{|t| t.person_id} # build an hash, the key is person_id and de value is an array of transportations
-    total_transportations = by_person.values.flatten.count # get the total of transportations
-    @pieceofpie = by_person.values.map { |x| x.length }
+    @total_transportations = by_person.values.flatten.size # get the total of transportations
+    @pieceofpie = by_person.values.map { |x| x.length.to_f / @total_transportations * 100}
+    
     #by_person.each_value{|transportations| @pieceofpie << (transportations.size / total_transportations * 100)}
   end
 end
