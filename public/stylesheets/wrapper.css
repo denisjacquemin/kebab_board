@@ -9,8 +9,11 @@
   padding: 0;
   text-align: left;
   float: left; }
+  #wrapper #main-content.small {
+    width: 68%; }
+  #wrapper #main-content.wide {
+    width: 98%; }
   #wrapper #main-content {
-    width: 68%;
     float: left;
     padding: 0; }
     #wrapper #main-content #align {
