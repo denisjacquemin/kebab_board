@@ -22,6 +22,7 @@
 
 #navigation li a {
   display: block;
+  opacity: 0.75;
   padding: 5px 8px 6px;
   background: #333333 none repeat scroll 0 0;
   color: #FFFFFF;
@@ -29,12 +30,14 @@
   text-decoration: none; }
 
 #navigation li a:hover {
-  background: #555555; }
+  background: #555555;
+  opacity: 1; }
 
 #navigation a.current {
   background: #E5E5E5 none repeat scroll 0 0;
   color: #003366;
-  font-weight: bold; }
+  font-weight: bold;
+  opacity: 1; }
 
 #navigation li a:hover.current {
   background: #E5E5E5; }
