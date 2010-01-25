@@ -17,7 +17,7 @@
       %br      
       .fields
         - f.fields_for :transportations do |builder|
-          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}, {:class => 'nice_select'}
           = builder.link_to_remove 'effacer'
         = f.link_to_add "ajouter", :transportations
     #participations
