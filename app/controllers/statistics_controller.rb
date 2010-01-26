@@ -3,7 +3,7 @@ class StatisticsController < ApplicationController
     kebab_all = Kebab.all
     
     # Nombre de participants par semaine
-    by_week = kebab_all.collect {|k|  [k.date.cweek, k.participations.count]}
+    by_week = kebab_all(:order => 'date asc').collect {|k|  [k.date.cweek, k.participations.count]}
     @weeks = by_week.collect {|bw| bw[0]} 
     @participations = by_week.collect {|bw| bw[1]} 
     @average = @participations.inject(0.0) { |sum,el| sum + el } / @participations.size
