@@ -13,7 +13,7 @@
           - @kebabs.each do |kebab|
             %tr
               %td
-                = kebab.date
+                = kebab.date.strftime('%d/%m/%Y')
               %td
                 =  truncate(kebab.comment, :length => 30)
               %td
