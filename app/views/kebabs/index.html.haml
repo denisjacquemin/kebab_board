@@ -15,7 +15,7 @@
               %td
                 = kebab.date
               %td
-                = kebab.comment
+                =  truncate(kebab.comment, :length => 30)
               %td
                 = link_to 'Edit', edit_kebab_path(kebab)
               %td
