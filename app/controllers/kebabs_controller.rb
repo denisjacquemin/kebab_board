@@ -2,7 +2,7 @@ class KebabsController < ApplicationController
   # GET /kebabs
   # GET /kebabs.xml
   def index
-    @kebabs = Kebab.all
+    @kebabs = Kebab.all(:order => 'date asc')
 
     respond_to do |format|
       format.html # index.html.erb
