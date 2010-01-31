@@ -12,9 +12,15 @@
           - @people.each do |person|
             %tr
               %td
-                = link_to person.name, edit_person_path(person)
+                - unless person.name == 'Mr Bureaux'
+                  = link_to person.name, edit_person_path(person)
+                - else
+                  = person.name
               %td
-                = link_to 'Effacer', person, :confirm => 'Etes vous sure?', :method => :delete
+                - unless person.name == 'Mr Bureaux'
+                  = link_to 'Effacer', person, :confirm => 'Etes vous sure?', :method => :delete
+                - else
+                  'impossible'
     .bloc-bottom
 #sidebar
   .bloc
