@@ -45,7 +45,7 @@ class PeopleController < ApplicationController
     respond_to do |format|
       if @person.save
         flash[:notice] = 'Person was successfully created.'
-        format.html { redirect_to(person_url) }
+        format.html { redirect_to(people_url) }
         format.xml  { render :xml => @person, :status => :created, :location => @person }
       else
         format.html { render :action => "new" }
@@ -62,7 +62,7 @@ class PeopleController < ApplicationController
     respond_to do |format|
       if @person.update_attributes(params[:person])
         flash[:notice] = 'Person was successfully updated.'
-        format.html { redirect_to(person_url) }
+        format.html { redirect_to(people_url) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
