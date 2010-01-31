@@ -1,0 +1,13 @@
+!!! Strict
+%html
+  %head
+    %title passwords
+    = stylesheet_link_tag 'login', 'awesome-button'
+    = yield :css
+    = yield :javascript
+  %body
+    #center
+      #top
+      #login
+        = yield
+      .clear
