@@ -51,6 +51,13 @@ a.action {
 a:hover.action {
   color: #222; }
 
+a.cancel {
+  color: #F00;
+  text-decoration: none; }
+
+a:hover.cancel {
+  text-decoration: underline; }
+
 a.excel {
   background: url('../images/icon/page_excel.png') no-repeat;
   padding-left: 20px;

@@ -1,13 +1,12 @@
-function remove_fields (link) {
-    $(link).previous("input[type='hidden']").value = 1;
-    $(link).up('.fields').hide();
-}
+$(document).ready(function() {
+  $('form select.nice_select').append('<option value="new">autre</option>');
+});
 
-function add_fields(link, association, content) {
-    var new_id = new Date().getTime();
-    var regexp = new RegExp("new_" + association, "g");
-    $(link).up().insert({
-       before: content.replace(regexp, new_id);
-    });
-    
-}
+$(function() {
+  $('form select.nice_select').live('change', function() {
+    if (this.value == 'new') {
+        var newName = prompt('Entrer un nouveau nom');
+        $(this).append('<option value="">' + newName + '</option>');
+    }
+  });
+});

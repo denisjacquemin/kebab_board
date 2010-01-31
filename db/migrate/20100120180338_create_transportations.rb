@@ -1,6 +1,6 @@
 class CreateTransportations < ActiveRecord::Migration
   def self.up
-    create_table :transportations do |t|
+    create_table :transportations, :id => false do |t|
       t.integer :kebab_id
       t.integer :person_id
 

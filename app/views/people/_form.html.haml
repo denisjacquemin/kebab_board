@@ -1,0 +1,12 @@
+- content_for :css do
+  = stylesheet_link_tag 'form'
+- form_for(@person, :html => {:class => 'form'}) do |f|
+  .row
+    = f.label :name, 'Nom'
+    %br
+    = f.text_field :name
+  .buttons
+    = f.submit button_label
+    = link_to 'annuler', people_path, :class => 'cancel'
+    
+

@@ -1,0 +1,14 @@
+#main-content.small
+  #align
+    .bloc
+      .header 
+        %h1 Edition personne
+      .content
+        = render 'form', :button_label => 'Sauver'
+
+    .bloc-bottom
+#sidebar
+  .bloc
+    %h2 Actions
+    .verybigrow
+      = link_to 'Listing Personnes', people_path, :class => 'awesome small green'

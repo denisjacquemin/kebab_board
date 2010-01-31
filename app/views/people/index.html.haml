@@ -1,0 +1,23 @@
+#main-content.small
+  #align
+    .bloc
+      .header 
+        %h1 Listing Personne
+      .content
+        %table
+          %tr
+            %th
+              Nom
+            %th
+          - @people.each do |person|
+            %tr
+              %td
+                = link_to person.name, edit_person_path(person)
+              %td
+                = link_to 'Effacer', person, :confirm => 'Etes vous sure?', :method => :delete
+    .bloc-bottom
+#sidebar
+  .bloc
+    %h2 Actions
+    .verybigrow
+      = link_to 'Ajouter une personne', new_person_path, :class => 'awesome small green'
