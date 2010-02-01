@@ -1,0 +1,16 @@
+<h2>Inscription</h2>
+
+<% semantic_form_for @user do |form| %>
+  <%= form.error_messages %>
+  <%= render :partial => "/users/inputs", :locals => { :form => form } %>
+  <% form.buttons do %>
+    <%= form.commit_button "Creation" %>
+  <% end %>
+<% end %>
+
+<ul>
+  <li>
+    Deja un compte? 
+    <%= link_to "Identifiez vous", sign_in_path %>
+  </li>
+</ul>

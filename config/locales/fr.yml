@@ -1,0 +1,21 @@
+fr:
+  clearance:
+    models:
+      clearance_mailer:
+        change_password: Changer mot de passe
+        confirmation: Confirmation compte
+    controllers:
+      confirmations:
+        confirmed_email: Confirmez l'email et identifiez vous'.
+      passwords:
+        deliver_change_password: Vous allez recevoir un email dans les prochaines minutes. Il contient les instructions pour changer votre mot de passe.
+        unknown_email: Email inconnu.
+      sessions:
+        bad_email_or_password: Mauvais email ou mot de passe.
+        unconfirmed_email: Email non confirme, un email de confirmation a ete renvoye.
+      users:
+        deliver_confirmation: Vous allez recevoir un email dans les prochaines minutes. Il contient les instructions pour confirmer votre compte.
+        signed_in: Identification correcte
+        signed_out: Session terminee.
+        sign_in: Identification
+        password: Mot de passe

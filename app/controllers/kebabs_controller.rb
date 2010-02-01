@@ -1,4 +1,7 @@
 class KebabsController < ApplicationController
+  
+  before_filter :authenticate
+  
   # GET /kebabs
   # GET /kebabs.xml
   def index

@@ -1,0 +1,91 @@
+body {
+  background: #E5E5E5; }
+
+#center {
+  margin: 50px auto;
+  width: 480px;
+  font-family: "Lucida Grande",arial,sans-serif; }
+  #center #top {
+    background: url("/images/login_dialog.png") no-repeat scroll left top transparent;
+    width: 480px;
+    height: 12px; }
+  #center #login {
+    background: url("/images/login_dialog.png") no-repeat scroll left bottom transparent;
+    width: 400px;
+    padding: 30px 40px; }
+    #center #login fieldset {
+      border: none;
+      margin: 0;
+      padding: 0; }
+      #center #login fieldset ol {
+        margin: 0;
+        padding: 0; }
+      #center #login fieldset li {
+        margin: 10px 0;
+        padding: 0; }
+    #center #login label {
+      width: 100%;
+      display: block;
+      font-size: 14px; }
+    #center #login .buttons {
+      margin: 10px 0; }
+    #center #login input[type='text'], #center #login input[type='password'] {
+      height: 25px;
+      font-size: 18px;
+      color: #333;
+      max-width: 350px; }
+    #center #login h2 {
+      color: #333;
+      font-size: 20px;
+      margin: 0 0 15px;
+      padding: 0; }
+    #center #login li {
+      list-style: none;
+      font-size: 12px;
+      margin: 0;
+      padding: 0; }
+    #center #login ul {
+      margin: 20px 0;
+      padding: 10px 0 0 0;
+      border-top: dashed 1px #888; }
+    #center #login a {
+      color: #555; }
+    #center #login a:hover {
+      color: #222;
+      text-decoration: none;
+      background: #eee; }
+    #center #login .inline-errors {
+      color: #FF4B4B;
+      margin: 5px 0 20px 0; }
+    #center #login #errorExplanation {
+      padding: 10px;
+      background: #eee;
+      border: solid 1px #555; }
+      #center #login #errorExplanation h2 {
+        font-size: 15px;
+        color: #FF4B4B; }
+      #center #login #errorExplanation p {
+        font-size: 13px;
+        color: #FF4B4B; }
+      #center #login #errorExplanation li {
+        color: #FF4B4B;
+        font-size: 13px; }
+      #center #login #errorExplanation ul, #center #login #errorExplanation li {
+        margin: 0;
+        padding: 0;
+        border: none;
+        list-style: square; }
+      #center #login #errorExplanation ul {
+        margin: 0 0 0 20px; }
+    #center #login .flash {
+      font-size: 13px;
+      padding: 10px;
+      margin: 0 0 20px 0; }
+    #center #login .green {
+      color: #368F1A;
+      border: 1px solid #368F1A;
+      background: none repeat scroll 0 0 #D1EFD5; }
+    #center #login .red {
+      color: #CF5A5A;
+      border: 1px solid #CF5A5A;
+      background: none repeat scroll 0 0 #EFD1D1; }

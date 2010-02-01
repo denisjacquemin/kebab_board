@@ -1,4 +1,7 @@
 class StatisticsController < ApplicationController
+
+  before_filter :authenticate
+  
   def index
     kebab_all = Kebab.all(:order => 'date asc')
     
