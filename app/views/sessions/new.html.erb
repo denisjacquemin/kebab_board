@@ -1,21 +1,23 @@
-<h2>Sign in</h2>
+<h2>Identification</h2>
 
 <% semantic_form_for :session, :url => session_path do |form| %>
+  <%= form.error_messages %>
   <% form.inputs do %>
-    <%= form.input :email %>
-    <%= form.input :password, :as => :password %>
+    <%= form.input :email, :label => 'Email' %>
+    <%= form.input :password, :as => :password, :label => 'Mot de passe' %>
   <% end %>
   <% form.buttons do %>
-    <%= form.commit_button "Sign in" %>
+    <%= form.commit_button "C'est parti" %>
   <% end %>
 <% end %>
 
 <ul>
   <li>
-    <%= link_to "Sign up", sign_up_path %>
+    Pas de compte? 
+    <%= link_to "Inscrivez vous", sign_up_path %>
   </li>
   <li>
-    <%= link_to "Forgot password?", new_password_path %>
+    <%= link_to "Oubliez votre mot de passe?", new_password_path %>
   </li>
 </ul>
 

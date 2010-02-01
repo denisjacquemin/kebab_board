@@ -9,5 +9,9 @@
     #center
       #top
       #login
+        .red
+          = flash[:error]
+        .green
+          = flash[:notice]
         = yield
       .clear
