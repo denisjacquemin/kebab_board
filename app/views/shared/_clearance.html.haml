@@ -1,0 +1,12 @@
+%body
+  #center
+    #top
+    #login
+      - unless flash[:error].nil?
+        .flash.red
+          = flash[:error]
+      - unless flash[:notice].nil?
+        .flash.green
+          = flash[:notice]
+      = yield
+    .clear

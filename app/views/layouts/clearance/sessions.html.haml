@@ -5,13 +5,4 @@
     = stylesheet_link_tag 'login', 'awesome-button'
     = yield :css
     = yield :javascript
-  %body
-    #center
-      #top
-      #login
-        .red
-          = flash[:error]
-        .green
-          = flash[:notice]
-        = yield
-      .clear
+  = render :partial => 'shared/clearance'
