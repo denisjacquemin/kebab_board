@@ -42,6 +42,7 @@ class KebabsController < ApplicationController
   # GET /kebabs/1/edit
   def edit
     @kebab = Kebab.find(params[:id])
+    @people = Person.all(:order => 'name asc')
   end
 
   # POST /kebabs
