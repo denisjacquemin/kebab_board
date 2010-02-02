@@ -5,7 +5,7 @@
     #date
       = f.label :date
       %br
-      = f.date_select(:date, :order => [:day, :month, :year], :start_year => 2010)
+      = f.date_select(:date, :order => [:day, :month, :year], :start_year => 2010, :use_month_numbers => true)
     #promoter
       - f.fields_for :promoter do |builder|
         = builder.label :promoter_id, "Organisateur"

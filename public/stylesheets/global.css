@@ -3,7 +3,6 @@ body {
   font-color: #222222;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
   background-color: #999; }
 
 a {
@@ -91,3 +90,24 @@ strong {
 
 .clear {
   clear: both; }
+
+#errorExplanation {
+  padding: 10px;
+  background: #eee;
+  border: solid 1px #555; }
+  #errorExplanation h2 {
+    font-size: 15px;
+    color: #FF4B4B; }
+  #errorExplanation p {
+    font-size: 13px;
+    color: #FF4B4B; }
+  #errorExplanation li {
+    color: #FF4B4B;
+    font-size: 13px; }
+  #errorExplanation ul, #errorExplanation li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: square; }
+  #errorExplanation ul {
+    margin: 0 0 0 20px; }

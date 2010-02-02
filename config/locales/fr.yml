@@ -1,4 +1,21 @@
 fr:
+  activerecord:
+    errors:
+      template:
+        header: L'action n'a pu etre enregistree
+        body: Veuillez corriger les erreurs suivantes
+      models:
+        user:
+          :attributes:
+            email:
+              blank: est requit (test@example.com)
+              invalid: est invalide
+            password: 
+              blank: est requit
+  support:
+    array:
+      two_words_connectorest:
+        invalide: ne correspondent pas    
   clearance:
     models:
       clearance_mailer:

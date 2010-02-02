@@ -1,12 +1,19 @@
-%body
-  #center
-    #top
-    #login
-      - unless flash[:error].nil?
-        .flash.red
-          = flash[:error]
-      - unless flash[:notice].nil?
-        .flash.green
-          = flash[:notice]
-      = yield
-    .clear
+!!! Strict
+%html
+  %head
+    %title passwords
+    = stylesheet_link_tag 'login', 'global'
+    = yield :css
+    = yield :javascript
+  %body
+    #center
+      #top
+      #login
+        - unless flash[:error].nil?
+          .flash.red
+            = flash[:error]
+        - unless flash[:notice].nil?
+          .flash.green
+            = flash[:notice]
+        = yield
+      .clear

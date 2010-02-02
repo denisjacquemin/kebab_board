@@ -8,7 +8,7 @@ class Person < ActiveRecord::Base
   
   private
   def name_mr_bureaux_cannot_be_updated
-    errors.add(:name, 'Ce nom ne peut etre modifie') if 
+    errors.add(:name, 'ce nom ne peut etre modifie') if 
       Person.find(id, :select => 'name').name =='Mr Bureaux'
   end
   
