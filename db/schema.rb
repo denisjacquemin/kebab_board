@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100131195749) do
+ActiveRecord::Schema.define(:version => 20100202180209) do
+
+  create_table "comments", :force => true do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "kebab_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "kebabs", :force => true do |t|
     t.date     "date"
@@ -19,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20100131195749) do
     t.integer  "promoter_id"
   end
 
-  create_table "participations", :force => true do |t|
+  create_table "participations", :id => false, :force => true do |t|
     t.integer  "kebab_id"
     t.integer  "person_id"
     t.datetime "created_at"
@@ -32,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20100131195749) do
     t.datetime "updated_at"
   end
 
-  create_table "transportations", :force => true do |t|
+  create_table "transportations", :id => false, :force => true do |t|
     t.integer  "kebab_id"
     t.integer  "person_id"
     t.datetime "created_at"

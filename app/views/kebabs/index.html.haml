@@ -16,7 +16,8 @@
               %td
                 = link_to kebab.date.strftime('%d/%m/%Y'), edit_kebab_path(kebab)
               %td
-                = link_to truncate(kebab.comment, :length => 30), edit_kebab_path(kebab)
+                todo
+                -#= link_to truncate(kebab.comment, :length => 30), edit_kebab_path(kebab)
               %td
                 = link_to 'Effacer', kebab, :confirm => 'Etes vous sure?', :method => :delete
     .bloc-bottom
