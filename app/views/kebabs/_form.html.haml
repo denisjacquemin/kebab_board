@@ -30,14 +30,21 @@
         = f.link_to_add "ajouter", :participations
   .row
     #comments
+      %label
+        Commentaires
+      %br
       - @kebab.comments.each do |comment|
         .comment
-          = "Ecrit par #{comment.person.name}"
+          = "Ecrit par #{comment.user.email}" unless comment.new_record?
           %br
           .content
             = comment.content
     #new-comment 
-      = f.text_area :comments
+      %label
+        Ajouter un commentaire
+      %br
+      = text_area_tag 'kebab[comments_attributes[0[content]]]'
+      = hidden_field_tag 'kebab[comments_attributes[0[user_id]]]', current_user.id
   .buttons
     = f.submit button_label
     = link_to 'annuler', kebabs_path, :class => 'cancel'
