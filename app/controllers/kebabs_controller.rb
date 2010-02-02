@@ -31,6 +31,7 @@ class KebabsController < ApplicationController
     @kebab.build_promoter
     @kebab.transportations << Transportation.new
     @kebab.participations << Participation.new
+    @kebab.comments << Comment.new
     @people = Person.all(:order => 'name asc')
     
     respond_to do |format|
@@ -42,6 +43,7 @@ class KebabsController < ApplicationController
   # GET /kebabs/1/edit
   def edit
     @kebab = Kebab.find(params[:id])
+    @people = Person.all(:order => 'name asc')
   end
 
   # POST /kebabs

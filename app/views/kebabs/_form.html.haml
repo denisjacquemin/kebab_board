@@ -29,10 +29,15 @@
           = builder.link_to_remove 'effacer'
         = f.link_to_add "ajouter", :participations
   .row
-    #comment
-      = f.label :comment, 'Commentaires'
-      %br
-      = f.text_area :comment
+    #comments
+      - @kebab.comments.each do |comment|
+        .comment
+          = "Ecrit par #{comment.person.name}"
+          %br
+          .content
+            = comment.content
+    #new-comment 
+      = f.text_area :comments
   .buttons
     = f.submit button_label
     = link_to 'annuler', kebabs_path, :class => 'cancel'

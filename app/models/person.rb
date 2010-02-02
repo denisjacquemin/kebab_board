@@ -1,6 +1,7 @@
 class Person < ActiveRecord::Base
   has_many :kebabs
   has_many :transportations
+  has_many :comments
   
   validate_on_update :name_mr_bureaux_cannot_be_updated
   
