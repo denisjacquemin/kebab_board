@@ -5,19 +5,19 @@
     #date
       = f.label :date
       %br
-      = f.date_select :date
+      = f.date_select(:date, :order => [:day, :month, :year], :start_year => 2010)
     #promoter
       - f.fields_for :promoter do |builder|
         = builder.label :promoter_id, "Organisateur"
         %br
-        = select 'kebab', 'promoter_id', Person.all.collect{|person| [person.name, person.id]}
+        = select 'kebab', 'promoter_id', @people.collect{|person| [person.name, person.id]}
   .row
     #transportations
       = f.label :person_id, "Voiture(s)" 
       %br      
       .fields
         - f.fields_for :transportations do |builder|
-          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+          = builder.collection_select :person_id, @people, :id, :name, {:multiple => true}
           = builder.link_to_remove 'effacer'
         = f.link_to_add "ajouter", :transportations
     #participations
@@ -25,7 +25,7 @@
       %br
       .fields
         - f.fields_for :participations do |builder|
-          = builder.collection_select :person_id, Person.all, :id, :name, {:multiple => true}
+          = builder.collection_select :person_id, @people, :id, :name, {:multiple => true}
           = builder.link_to_remove 'effacer'
         = f.link_to_add "ajouter", :participations
   .row

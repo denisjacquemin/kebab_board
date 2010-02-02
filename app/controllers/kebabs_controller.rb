@@ -31,6 +31,7 @@ class KebabsController < ApplicationController
     @kebab.build_promoter
     @kebab.transportations << Transportation.new
     @kebab.participations << Participation.new
+    @people = Person.all(:order => 'name asc')
     
     respond_to do |format|
       format.html # new.html.erb
