@@ -34,11 +34,12 @@
         Commentaires
       %br
       - @kebab.comments.each do |comment|
-        .comment
-          = "Ecrit par #{comment.user.email}" unless comment.new_record?
-          %br
-          .content
-            = comment.content
+        - unless comment.new_record?
+          .comment
+            .author
+              = "Ecrit par #{comment.user.email}" unless comment.new_record?
+            .comment-content
+              =h comment.content
     #new-comment 
       %label
         Ajouter un commentaire
