@@ -36,7 +36,7 @@
       - @kebab.comments.each do |comment|
         - unless comment.new_record?
           .avatar
-            = image_tag current_user.gravatar_url
+            = image_tag comment.user.gravatar_url
           .comment
             .author  
               = "Ecrit par #{comment.user.email}" unless comment.new_record?
