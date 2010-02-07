@@ -9,14 +9,15 @@
             %th
               Date
             %th
-              Commentaires
+              Infos
             %th
           - @kebabs.each do |kebab|
             %tr
               %td
                 = link_to kebab.date.strftime('%d/%m/%Y'), edit_kebab_path(kebab)
               %td
-                todo
+                = kebab.comments.size
+                Commentaire(s)
                 -#= link_to truncate(kebab.comment, :length => 30), edit_kebab_path(kebab)
               %td
                 = link_to 'Effacer', kebab, :confirm => 'Etes vous sure?', :method => :delete
