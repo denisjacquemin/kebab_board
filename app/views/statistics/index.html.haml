@@ -15,4 +15,16 @@
           %h2 Les chauffeurs
           .graph
             = Gchart.pie_3d(:size => '500x200', :format => 'image_tag', :data => @pieceofpie, :labels => @drivers)
+        .row
+          %h2 Kebab of fame
+          %table
+            %tr
+              %th Nom
+              %th Nombre de participations
+            - for fame in @fames
+              %tr
+                %td
+                  = fame[0]
+                %td
+                  = fame[1]
     .bloc-bottom
