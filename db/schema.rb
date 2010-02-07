@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20100202180209) do
     t.integer  "promoter_id"
   end
 
-  create_table "participations", :id => false, :force => true do |t|
+  create_table "participations", :force => true do |t|
     t.integer  "kebab_id"
     t.integer  "person_id"
     t.datetime "created_at"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20100202180209) do
     t.datetime "updated_at"
   end
 
-  create_table "transportations", :id => false, :force => true do |t|
+  create_table "transportations", :force => true do |t|
     t.integer  "kebab_id"
     t.integer  "person_id"
     t.datetime "created_at"
