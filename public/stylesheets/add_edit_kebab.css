@@ -36,3 +36,8 @@ textarea {
     border-right: 1px solid #bbb; }
   #comments .comment .comment-content {
     padding: 5px 5px 20px 20px; }
+
+#new-comment {
+  float: left;
+  width: 100%;
+  clear: both; }
