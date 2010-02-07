@@ -20,6 +20,9 @@ class StatisticsController < ApplicationController
     @total_transportations = by_person.values.flatten.size # get the total of transportations
     @pieceofpie = by_person.values.map { |x| x.length.to_f / @total_transportations * 100}
     
+    #kebab of fame
+    
+    
     #by_person.each_value{|transportations| @pieceofpie << (transportations.size / total_transportations * 100)}
   end
 end
