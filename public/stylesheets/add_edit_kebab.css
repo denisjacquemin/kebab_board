@@ -19,23 +19,26 @@ textarea {
   height: 150px;
   padding: 2px 3px; }
 
-#comments .avatar {
+#comments {
   float: left;
-  width: 13%;
-  clear: both; }
-#comments .comment {
-  float: left;
-  width: 87%;
-  margin: 0 0 20px 0; }
-  #comments .comment .author {
-    height: 25px;
-    background: #eee;
-    line-height: 25px;
-    padding: 0 5px;
-    border-bottom: 1px solid #bbb;
-    border-right: 1px solid #bbb; }
-  #comments .comment .comment-content {
-    padding: 5px 5px 20px 20px; }
+  width: 100%; }
+  #comments .avatar {
+    float: left;
+    width: 13%;
+    clear: both; }
+  #comments .comment {
+    float: left;
+    width: 87%;
+    margin: 0 0 20px 0; }
+    #comments .comment .author {
+      height: 25px;
+      background: #eee;
+      line-height: 25px;
+      padding: 0 5px;
+      border-bottom: 1px solid #bbb;
+      border-right: 1px solid #bbb; }
+    #comments .comment .comment-content {
+      padding: 5px 5px 20px 20px; }
 
 #new-comment {
   float: left;
