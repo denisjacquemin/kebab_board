@@ -24,7 +24,5 @@ class StatisticsController < ApplicationController
     @fames = Hash.new
     Person.all.each{|p| @fames[p.name] = p.participations.count}
     @fames = @fames.sort_by { |k,v| -v }
-    
-    #by_person.each_value{|transportations| @pieceofpie << (transportations.size / total_transportations * 100)}
   end
 end
