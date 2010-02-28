@@ -1,4 +1,6 @@
 class Kebab < ActiveRecord::Base
+  ajaxful_rateable
+  
   belongs_to :promoter, :class_name => 'Person'
   has_many :transportations
   has_many :participations
