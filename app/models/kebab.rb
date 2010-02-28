@@ -1,5 +1,5 @@
 class Kebab < ActiveRecord::Base
-  ajaxful_rateable
+  ajaxful_rateable :stars => 5, :dimensions => [:organisation, :ambiance, :repas], :allow_update => true
   
   belongs_to :promoter, :class_name => 'Person'
   has_many :transportations
