@@ -13,10 +13,10 @@ function addNestedField(ev) {
     
     // Make the context correct by replacing new_<parents> with the generated ID
     // of each of the parent objects
-    var input = element.previous('.fields').select('input')[0];
-    var name = input.readAttribute('name'); // name = kebab[transportations_attributes][0][_destroy]
-    var context = name.gsub(new RegExp('[[a-z]+]$'), ''); // context = kebab[transportations_attributes][0][_
-    alert(context);
+    var input = element.up('.fields').next('input');
+    var name = '';
+    if (input != undefined) name = input.readAttribute('name');
+    var context = name.gsub(new RegExp('[[a-z]+]$'), ''); 
     
     // context will be something like this for a brand new form:
     // project[tasks_attributes][1255929127459][assignments_attributes][1255929128105]
