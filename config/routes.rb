@@ -1,8 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   Clearance::Routes.draw(map)
   map.resources :people
-
-  map.resources :kebabs
+ 
+  map.resources :kebabs, :member => {:rate => :post}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
