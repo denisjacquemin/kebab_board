@@ -8,6 +8,12 @@ $(function() {
     // of each of the parent objects
     var context = ($(this).parents('.fields').children('input:first').attr('name') || '').replace(new RegExp('[[a-z]+]$'), '');
     
+    alert('first:input: ' + $(this).parents('.fields').children('input:first').attr('name'));
+    
+    alert('name: ' + $(this).parents('.fields').children('input:first').attr('name') || '');
+    
+    alert('context: ' + context);
+    
     // context will be something like this for a brand new form:
     // project[tasks_attributes][1255929127459][assignments_attributes][1255929128105]
     // or for an edit form:
