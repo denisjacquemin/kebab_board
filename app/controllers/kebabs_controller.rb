@@ -91,4 +91,15 @@ class KebabsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  # ajaxful_rating action
+  def rate
+    @article = Article.find(params[:id])
+    @article.rate(params[:stars], current_user, params[:dimension])
+    id = "ajaxful-rating-#{!params[:dimension].blank? ? "#{params[:dimension]}-" : ''}article-#{@article.id}"
+    render :update do |page|
+      page.replace_html id, ratings_for(@article, :wrap => false, :dimension => params[:dimension])
+      page.visual_effect :highlight, id
+    end
+  end
 end

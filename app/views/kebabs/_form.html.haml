@@ -29,6 +29,36 @@
           = builder.link_to_remove 'effacer'
         = f.link_to_add "ajouter", :participations
   .row
+    %label
+      Votes
+    %br
+    #userrating
+      %label
+        Organisation
+      %br
+      = ratings_for @kebab, :dimension => :organisation, :show_user_rating => true
+      %label
+        Ambiance
+      %br
+      = ratings_for @kebab, :dimension => :ambiance, :show_user_rating => true
+      %label
+        Repas
+      %br
+      = ratings_for @kebab, :dimension => :repas, :show_user_rating => true
+    #averagerating
+      %label
+        Organisation
+      %br
+      = ratings_for @kebab, :dimension => :organisation
+      %label
+        Ambiance
+      %br
+      = ratings_for @kebab, :dimension => :ambiance
+      %label
+        Repas
+      %br
+      = ratings_for @kebab, :dimension => :repas
+  .row
     #comments
       %label
         Commentaires
