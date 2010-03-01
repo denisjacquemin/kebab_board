@@ -3,10 +3,8 @@
   %head
     %title The kebab board
     = stylesheet_link_tag 'wrapper', 'header', 'tab', 'global', 'awesome-button', 'table'
-    = yield :css
-    = google_jquery :version => '1.3.2', :local => true
-    -#= google_jquery :version => '1.4.0'
-    = javascript_include_tag 'nested_form', 'application'
+    = yield :css 
+    = javascript_include_tag :defaults, 'nested_form', 'application'
     = yield :javascript
   %body
     #center
