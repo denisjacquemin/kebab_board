@@ -30,10 +30,11 @@
         = f.link_to_add "ajouter", :participations
   - unless @kebab.new_record?
     .row
-      %label
-        Un kebab presque parfait
+      %h2
+        Un kebab presque parfait...
       %br
       #userrating
+        %h3 Mes cotations
         %label
           Organisation
         %br
@@ -47,6 +48,7 @@
         %br
         = ratings_for @kebab, :dimension => :repas, :show_user_rating => true
       #averagerating
+        %h3 Moyenne des cotations
         %label
           Organisation
         %br
@@ -61,7 +63,7 @@
         = ratings_for @kebab, :static, :dimension => :repas
     .row
       #comments
-        %label Commentaires
+        %h2 Commentaires
         %br
         - @kebab.comments.each do |comment|
           - unless comment.new_record?
