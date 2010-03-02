@@ -50,19 +50,18 @@
         %label
           Organisation
         %br
-        = ratings_for @kebab, :dimension => :organisation
+        = ratings_for @kebab,  :static, :dimension => :organisation
         %label
           Ambiance
         %br
-        = ratings_for @kebab, :dimension => :ambiance
+        = ratings_for @kebab, :static, :dimension => :ambiance
         %label
           Repas
         %br
-        = ratings_for @kebab, :dimension => :repas
+        = ratings_for @kebab, :static, :dimension => :repas
     .row
       #comments
-        %label
-          Commentaires
+        %label Commentaires
         %br
         - @kebab.comments.each do |comment|
           - unless comment.new_record?
@@ -82,5 +81,3 @@
   .buttons
     = f.submit button_label
     = link_to 'annuler', kebabs_path, :class => 'cancel'
-    
-
