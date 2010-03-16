@@ -45,14 +45,14 @@ function addNestedField(ev) {
    var new_id  = new Date().getTime();
    content     = content.replace(regexp, new_id);
 
-   element.up('.fields').insert({bottom: content});
+   element.up('.fields').select('*').last().insert({before:content});
    return false;
 }
 
 
 function removeField(ev) {
     var element = ev.element();
-    var hidden_field = element.next('input[type=hidden]');
+    var hidden_field = element.next('input[type=hidden]'); // TODO trouver le closest
     if(hidden_field) {
         hidden_field.value = '1';
     }
