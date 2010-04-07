@@ -49,10 +49,10 @@ function addNestedField(ev) {
    return false;
 }
 
-
 function removeField(ev) {
     var element = ev.element();
-    var hidden_field = element.next('input[type=hidden]'); // TODO trouver le closest
+    
+    var hidden_field = element.previous('input[type=hidden]');
     if(hidden_field) {
         hidden_field.value = '1';
     }
