@@ -22,7 +22,10 @@ class StatisticsController < ApplicationController
     
     #kebab of fame
     @fames = Hash.new
-    Person.all.each{|p| @fames[p.name] = p.participations.count}
+    Person.all.each{ |p| 
+      @fames[p.name] = p.participations.count unless p.name == 'Mr Bureaux'
+      @fames[p.name] = - p.participations.count if p.name == 'Mr Bureaux'
+    }
     @fames = @fames.sort_by { |k,v| -v }
   end
 end
