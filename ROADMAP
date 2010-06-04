@@ -1,0 +1,50 @@
+title = kebab board
+
+arrow 1 = listing kebab
+arrow 2 = statitiques
+arrow 3 = participants 
+
+1-
+
+title = Listing kebab
+
+bouton en haut a gauche (back)
+bouton en haut a droite (new)
+
+arrow 1 = 2 juin 2010 counter = nombre de commentaires
+arrow 2 = 27 mai 2010 counter = nombre de commentaires
+
+2 detail kebab
+
+- date
+- organisateur
+- arrow chauffeur counter= nombre de chauffeurs 3
+- arrow participants counter= nombre de participant 4
+- arrow commentaires counter= nombre de commentaires 5
+
+3 chauffeurs
+
+bouton en haut a gauche (back)
+bouton en haut a droite (new)
+
+- arrow 1 = nom chauffeur
+- ...
+
+4 organisateurs
+
+bouton en haut a gauche (back)
+bouton en haut a droite (new)
+
+- arrow 1 = nom organisateur
+- ...
+
+5 commentaires
+
+bouton en haut a gauche (back)
+bouton en haut a droite (new)
+
+liste des commentaires avec avatars
+
+
+
+
