@@ -1,0 +1,24 @@
+%h2
+  Details
+%ul
+  %li.sep
+    = "Date: #{@kebab.date.strftime('%d/%m/%Y')}"
+  %li
+    = "Organisateur: #{@kebab.promoter.name}"
+
+
+%h2
+  Commentaires
+
+%ul     
+  - @kebab.comments.each do |comment|
+    - unless comment.new_record?
+      %li
+        %table
+          %tr
+            %td
+              = image_tag comment.user.gravatar_url
+            %td
+              = "Ecrit par #{comment.user.email}" unless comment.new_record?
+              %br
+              =h comment.content

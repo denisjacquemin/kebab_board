@@ -6,22 +6,12 @@ class KebabsController < ApplicationController
   # GET /kebabs.xml
   def index
     @kebabs = Kebab.all(:order => 'date asc')
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @kebabs }
-    end
   end
 
   # GET /kebabs/1
   # GET /kebabs/1.xml
   def show
     @kebab = Kebab.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @kebab }
-    end
   end
 
   # GET /kebabs/new

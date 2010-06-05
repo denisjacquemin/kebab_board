@@ -1,0 +1,5 @@
+- form_for @kebab do |f|
+  %ul.rounded
+    %li
+      = f.date_select(:date, :order => [:day, :month, :year], :start_year => 2010, :use_month_numbers => true)
+  = link_to "Submit", nil, :class => "whiteButton submit"

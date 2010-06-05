@@ -1,0 +1,9 @@
+%h2
+  Kebabs
+
+%ul
+  - for kebab in @kebabs
+    %li.arrow
+      = link_to kebab.date.strftime('%d/%m/%Y'), kebab
+      %small.counter 
+        = kebab.comments.size
