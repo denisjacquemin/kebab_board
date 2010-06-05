@@ -17,7 +17,7 @@
         %table
           %tr
             %td
-              = image_tag comment.user.gravatar_url
+              = image_tag comment.user.gravatar_url(:size => 50)
             %td
               = "Ecrit par #{comment.user.email}" unless comment.new_record?
               %br
