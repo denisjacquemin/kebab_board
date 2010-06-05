@@ -1,0 +1,22 @@
+<h2>Identification</h2>
+
+<% semantic_form_for :session, :url => session_path do |form| %>
+  <%= form.error_messages %>
+  <% form.inputs do %>
+    <%= form.input :email, :label => 'Email' %>
+    <%= form.input :password, :as => :password, :label => 'Mot de passe' %>
+  <% end %>
+  <% form.buttons do %>
+    <%= form.commit_button "C'est parti" %>
+  <% end %>
+<% end %>
+
+<ul>
+  <li>
+    Pas de compte? 
+    <%= link_to "Inscrivez vous", sign_up_path %>
+  </li>
+  <li>
+    <%= link_to "Oublie votre mot de passe?", new_password_path %>
+  </li>
+</ul>
