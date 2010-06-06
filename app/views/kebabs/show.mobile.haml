@@ -14,11 +14,11 @@
   - @kebab.comments.each do |comment|
     - unless comment.new_record?
       %li
-        %table
+        %table{ :id => 'comments'}
           %tr
-            %td
+            %td.avatar
               = image_tag comment.user.gravatar_url(:size => 50)
-            %td
+            %td.comment
               = "Ecrit par #{comment.user.email}" unless comment.new_record?
               %br
               =h comment.content
