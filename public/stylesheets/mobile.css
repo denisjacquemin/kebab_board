@@ -4,6 +4,7 @@
 
 #comments .avatar {
     width: 50px;
+    vertical-align: top;
 }
 
 #comments .avatar img {
