@@ -14,10 +14,15 @@ class ApplicationController < ActionController::Base
   private
   
   def mobile_device?
-    if session[:mobile_param]  
-      session[:mobile_param] == "1"  
-    else  
-      request.user_agent =~ /Mobile|webOS/  
+    puts controller_name
+    if controller_name != 'sessions'
+      if session[:mobile_param]  
+        session[:mobile_param] == "1"  
+      else  
+        request.user_agent =~ /Mobile|webOS/  
+      end
+    else 
+      false # keep browser version for login 
     end
   end
   helper_method :mobile_device?
