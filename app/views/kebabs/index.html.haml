@@ -22,12 +22,19 @@
               %td
                 = link_to 'Effacer', kebab, :confirm => 'Etes vous sure?', :method => :delete
     .bloc-bottom
+    #iphone
+      %div
+        %img{:src => 'images/IMG_0518.PNG'}
+      %div
+        %img{:src => 'images/IMG_0519.PNG'}
 #sidebar
   .bloc
     %h2 Actions
     .verybigrow
       = link_to 'Ajouter un kebab', new_kebab_path, :class => 'awesome small green'
     %h2 Dernières mises à jour
+    %p
+      6 juin - version iphone du kebab board
     %p
       7 fevrier - Pour chaque commentaire, ajout du 
       = link_to 'gravatar', 'http://www.gravatar.com'

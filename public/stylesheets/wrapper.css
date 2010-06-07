@@ -77,6 +77,13 @@
         padding: 0 8px 0 0;
         float: left;
         width: 100%; }
+      #wrapper #main-content #align #iphone {
+        margin: 50px 0;
+        width: 100%;
+        float: left; }
+        #wrapper #main-content #align #iphone div {
+          width: 50%;
+          float: left; }
   #wrapper #sidebar {
     width: 32%;
     float: right; }
