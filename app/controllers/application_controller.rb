@@ -14,7 +14,6 @@ class ApplicationController < ActionController::Base
   private
   
   def mobile_device?
-    puts controller_name
     if controller_name != 'sessions'
       if session[:mobile_param]  
         session[:mobile_param] == "1"  
