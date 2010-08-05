@@ -10,7 +10,7 @@
           %h2 Nombre de participants par semaine
           .graph
             -#= Gchart.sparkline(:size => '500x200', :format => 'image_tag', :data => [@participations, [@average,@average]], :theme => :thirty7signals, :legend => ['par semaine', "moyenne: #{"%.2f" % @average}"], :axis_with_labels => 'x,y', :max_value => @weeks.max, :axis_labels => [@weeks, @x_axis])
-            = Gchart.sparkline(:data => [@participations, [@average,@average]], :format => 'image_tag', :size => '500x200', :theme => :thirty7signals, :legend => ['par semaine', "moyenne: #{"%.2f" % @average}"], :axis_with_labels => 'x,y', :axis_labels => [@weeks, @x_axis])
+            = Gchart.sparkline(:data => [@participations, [@average,@average]], :format => 'image_tag', :size => '700x300', :theme => :thirty7signals, :legend => ['par semaine', "moyenne: #{"%.2f" % @average}"], :axis_with_labels => 'x,y', :axis_labels => [@weeks, @x_axis])
         .row
           %h2 Les chauffeurs
           .graph
