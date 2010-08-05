@@ -32,9 +32,13 @@
     %h2 Actions
     .verybigrow
       = link_to 'Ajouter un kebab', new_kebab_path, :class => 'awesome small green'
+    %h2 Derniers commentaires
+    - @last_comments.each do |comment|
+      %p
+        = "#{comment.content} by #{comment.user.email}"
     %h2 Dernières mises à jour
     %p
-      5 aout - un nom de domaine 
+      5 aout - Derniers commentaires ajoutes sur la home - un nom de domaine 
       %a{:href => 'http://www.kebab-board.be'}
         www.kebab-board.be  
     %p

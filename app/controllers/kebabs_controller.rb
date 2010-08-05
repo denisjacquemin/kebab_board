@@ -6,6 +6,7 @@ class KebabsController < ApplicationController
   # GET /kebabs.xml
   def index
     @kebabs = Kebab.all(:order => 'date desc')
+    @last_comments = Comment.last5
   end
 
   # GET /kebabs/1
