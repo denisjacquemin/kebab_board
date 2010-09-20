@@ -73,7 +73,7 @@
               .author  
                 = "Ecrit par #{comment.user.email}" unless comment.new_record?
               .comment-content
-                =h comment.content
+                =h(comment.content).gsub(/\n/, '<br/>')
       #new-comment 
         %label
           Ajouter un commentaire
