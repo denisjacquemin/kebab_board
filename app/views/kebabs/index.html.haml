@@ -35,7 +35,7 @@
     %h2 Derniers commentaires
     - @last_comments.each do |comment|
       %p
-        = "#{comment.content} by #{comment.user.email}"
+        = h "#{comment.content} by #{comment.user.email}"
     %h2 Dernières mises à jour
     %p
       5 aout - Derniers commentaires ajoutes sur la home - un nom de domaine 
