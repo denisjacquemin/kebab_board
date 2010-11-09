@@ -27,4 +27,16 @@
                   = fame[0]
                 %td
                   = fame[1]
+        .row
+          %h2 Best Commenters
+          %table
+            %tr
+              %th E-mail
+              %th Nombre de commentaires
+            - for commenter in @commenters
+              %tr
+                %td
+                  = commenter[0]
+                %td
+                  = commenter[1]
     .bloc-bottom

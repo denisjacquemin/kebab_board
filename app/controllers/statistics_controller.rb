@@ -27,5 +27,10 @@ class StatisticsController < ApplicationController
       @fames[p.name] = - p.participations.count if p.name == 'Mr Bureaux'
     }
     @fames = @fames.sort_by { |k,v| -v }
+    
+    #best commenter
+    @commenters = Hash.new
+    User.all.each{ |u| @commenters[u.email] = u.comments.count }
+    @commenters = @commenters.sort_by {|k,v| -v }
   end
 end
